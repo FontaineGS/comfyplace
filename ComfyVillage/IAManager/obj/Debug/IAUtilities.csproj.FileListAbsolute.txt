@@ -1,0 +1,11 @@
+C:\ComfyProject\ComfyVillage\IAManager\bin\Debug\IAManager.dll
+C:\ComfyProject\ComfyVillage\IAManager\bin\Debug\IAManager.pdb
+C:\ComfyProject\ComfyVillage\IAManager\obj\Debug\IAUtilities.csprojResolveAssemblyReference.cache
+C:\ComfyProject\ComfyVillage\IAManager\obj\Debug\IAManager.dll
+C:\ComfyProject\ComfyVillage\IAManager\obj\Debug\IAManager.pdb
+C:\ComfyProject\ComfyVillage\IAManager\bin\Debug\WorldUtilities.dll
+C:\ComfyProject\ComfyVillage\IAManager\bin\Debug\AgentUtitilies.dll
+C:\ComfyProject\ComfyVillage\IAManager\bin\Debug\WorldUtilities.pdb
+C:\ComfyProject\ComfyVillage\IAManager\bin\Debug\AgentUtitilies.pdb
+C:\ComfyProject\ComfyVillage\IAManager\bin\Debug\TerrainUtilities.dll
+C:\ComfyProject\ComfyVillage\IAManager\bin\Debug\TerrainUtilities.pdb

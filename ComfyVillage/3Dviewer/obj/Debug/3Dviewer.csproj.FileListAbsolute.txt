@@ -1,0 +1,14 @@
+C:\ComfyProject\ComfyVillage\3Dviewer\bin\Debug\3Dviewer.exe.config
+C:\ComfyProject\ComfyVillage\3Dviewer\bin\Debug\3Dviewer.exe
+C:\ComfyProject\ComfyVillage\3Dviewer\bin\Debug\3Dviewer.pdb
+C:\ComfyProject\ComfyVillage\3Dviewer\bin\Debug\AgentUtitilies.dll
+C:\ComfyProject\ComfyVillage\3Dviewer\bin\Debug\ComfyVillage.exe
+C:\ComfyProject\ComfyVillage\3Dviewer\bin\Debug\WorldUtilities.dll
+C:\ComfyProject\ComfyVillage\3Dviewer\bin\Debug\AgentUtitilies.pdb
+C:\ComfyProject\ComfyVillage\3Dviewer\bin\Debug\ComfyVillage.pdb
+C:\ComfyProject\ComfyVillage\3Dviewer\bin\Debug\WorldUtilities.pdb
+C:\ComfyProject\ComfyVillage\3Dviewer\obj\Debug\3Dviewer.csprojResolveAssemblyReference.cache
+C:\ComfyProject\ComfyVillage\3Dviewer\obj\Debug\3Dviewer.exe
+C:\ComfyProject\ComfyVillage\3Dviewer\obj\Debug\3Dviewer.pdb
+C:\ComfyProject\ComfyVillage\3Dviewer\bin\Debug\TerrainUtilities.dll
+C:\ComfyProject\ComfyVillage\3Dviewer\bin\Debug\TerrainUtilities.pdb
