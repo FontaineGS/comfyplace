@@ -1,0 +1,9 @@
+C:\ComfyProject\ComfyVillage\WorldUtilities\obj\Debug\WorldUtilities.csprojResolveAssemblyReference.cache
+C:\ComfyProject\ComfyVillage\WorldUtilities\bin\Debug\WorldUtilities.dll
+C:\ComfyProject\ComfyVillage\WorldUtilities\bin\Debug\WorldUtilities.pdb
+C:\ComfyProject\ComfyVillage\WorldUtilities\obj\Debug\WorldUtilities.dll
+C:\ComfyProject\ComfyVillage\WorldUtilities\obj\Debug\WorldUtilities.pdb
+C:\ComfyProject\ComfyVillage\WorldUtilities\bin\Debug\AgentUtitilies.dll
+C:\ComfyProject\ComfyVillage\WorldUtilities\bin\Debug\TerrainUtilities.dll
+C:\ComfyProject\ComfyVillage\WorldUtilities\bin\Debug\AgentUtitilies.pdb
+C:\ComfyProject\ComfyVillage\WorldUtilities\bin\Debug\TerrainUtilities.pdb
