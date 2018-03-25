@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ComfyVillage</RootNamespace>
     <AssemblyName>ComfyVillage</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,21 +51,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AgentUtitilies\AgentUtitilies.csproj">
-      <Project>{8bb66201-9d6d-4887-b712-b6e96160f402}</Project>
-      <Name>AgentUtitilies</Name>
+    <ProjectReference Include="..\AgentUtilities\AgentUtilities.csproj">
+      <Project>{4c310c37-9cdf-4c14-9a36-10dab032bd38}</Project>
+      <Name>AgentUtilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IAManager\IAUtilities.csproj">
-      <Project>{9a86006f-db4c-4332-abde-9b4d483427d7}</Project>
-      <Name>IAUtilities</Name>
+    <ProjectReference Include="..\EF_IAUtilities\EF_IAUtilities.csproj">
+      <Project>{5db6c7dc-b98f-4b27-8b55-3115fb246baf}</Project>
+      <Name>EF_IAUtilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TerrainUtilities\TerrainUtilities.csproj">
-      <Project>{a1e9ac1d-2d75-453d-be77-87bc630ea7fa}</Project>
-      <Name>TerrainUtilities</Name>
+    <ProjectReference Include="..\EF_WorldUtilities\EF_WorldUtilities.csproj">
+      <Project>{d0529e12-459e-4d3d-8c71-a90f2bcd40f0}</Project>
+      <Name>EF_WorldUtilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WorldUtilities\WorldUtilities.csproj">
-      <Project>{65504688-6a8c-42f9-abec-3163a32b76c4}</Project>
-      <Name>WorldUtilities</Name>
+    <ProjectReference Include="..\MapUtilities\MapUtilities.csproj">
+      <Project>{ad9bda31-26cf-4e3a-90b1-68ea62be4c1a}</Project>
+      <Name>MapUtilities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

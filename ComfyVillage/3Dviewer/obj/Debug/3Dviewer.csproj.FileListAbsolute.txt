@@ -12,3 +12,5 @@ C:\ComfyProject\ComfyVillage\3Dviewer\obj\Debug\3Dviewer.exe
 C:\ComfyProject\ComfyVillage\3Dviewer\obj\Debug\3Dviewer.pdb
 C:\ComfyProject\ComfyVillage\3Dviewer\bin\Debug\TerrainUtilities.dll
 C:\ComfyProject\ComfyVillage\3Dviewer\bin\Debug\TerrainUtilities.pdb
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\3Dviewer\obj\Debug\3Dviewer.exe
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\3Dviewer\obj\Debug\3Dviewer.pdb

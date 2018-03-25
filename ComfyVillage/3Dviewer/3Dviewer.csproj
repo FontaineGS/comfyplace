@@ -51,24 +51,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AgentUtitilies\AgentUtitilies.csproj">
-      <Project>{8bb66201-9d6d-4887-b712-b6e96160f402}</Project>
-      <Name>AgentUtitilies</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ComfyVillage\ComfyVillage.csproj">
-      <Project>{f86cee4a-a79e-4221-a62b-9d294dcf4233}</Project>
-      <Name>ComfyVillage</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TerrainUtilities\TerrainUtilities.csproj">
-      <Project>{a1e9ac1d-2d75-453d-be77-87bc630ea7fa}</Project>
-      <Name>TerrainUtilities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WorldUtilities\WorldUtilities.csproj">
-      <Project>{65504688-6a8c-42f9-abec-3163a32b76c4}</Project>
-      <Name>WorldUtilities</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

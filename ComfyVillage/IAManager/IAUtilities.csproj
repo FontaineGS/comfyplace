@@ -40,23 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behaviour.cs" />
     <Compile Include="IIa.cs" />
+    <Compile Include="Intent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RabbitIA.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AgentUtitilies\AgentUtitilies.csproj">
-      <Project>{8BB66201-9D6D-4887-B712-B6E96160F402}</Project>
-      <Name>AgentUtitilies</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TerrainUtilities\TerrainUtilities.csproj">
-      <Project>{A1E9AC1D-2D75-453D-BE77-87BC630EA7FA}</Project>
-      <Name>TerrainUtilities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WorldUtilities\WorldUtilities.csproj">
-      <Project>{65504688-6a8c-42f9-abec-3163a32b76c4}</Project>
-      <Name>WorldUtilities</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

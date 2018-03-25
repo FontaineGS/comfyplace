@@ -1,0 +1,15 @@
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\bin\Debug\netcoreapp2.0\EF_IAUtilities.deps.json
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\bin\Debug\netcoreapp2.0\EF_IAUtilities.dll
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\obj\Debug\netcoreapp2.0\EF_IAUtilities.csprojResolveAssemblyReference.cache
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\obj\Debug\netcoreapp2.0\EF_IAUtilities.csproj.CoreCompileInputs.cache
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\obj\Debug\netcoreapp2.0\EF_IAUtilities.AssemblyInfoInputs.cache
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\obj\Debug\netcoreapp2.0\EF_IAUtilities.AssemblyInfo.cs
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\bin\Debug\netcoreapp2.0\EF_IAUtilities.pdb
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\bin\Debug\netcoreapp2.0\AgentUtilities.dll
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\bin\Debug\netcoreapp2.0\EF_WorldUtilities.dll
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\bin\Debug\netcoreapp2.0\MapUtilities.dll
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\bin\Debug\netcoreapp2.0\AgentUtilities.pdb
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\bin\Debug\netcoreapp2.0\EF_WorldUtilities.pdb
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\bin\Debug\netcoreapp2.0\MapUtilities.pdb
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\obj\Debug\netcoreapp2.0\EF_IAUtilities.dll
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\EF_IAUtilities\obj\Debug\netcoreapp2.0\EF_IAUtilities.pdb

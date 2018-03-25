@@ -1,0 +1,2 @@
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\WpfUtilities\obj\Debug\WpfUtilities.csprojResolveAssemblyReference.cache
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\WpfUtilities\obj\Debug\WpfUtilities.csproj.CoreCompileInputs.cache

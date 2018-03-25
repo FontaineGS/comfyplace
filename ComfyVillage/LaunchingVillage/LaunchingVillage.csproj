@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AgentUtilities\AgentUtilities.csproj" />
+    <ProjectReference Include="..\EF_IAUtilities\EF_IAUtilities.csproj" />
+    <ProjectReference Include="..\EF_WorldUtilities\EF_WorldUtilities.csproj" />
+    <ProjectReference Include="..\Helper\Helper.csproj" />
+    <ProjectReference Include="..\MapUtilities\MapUtilities.csproj" />
+  </ItemGroup>
+
+</Project>

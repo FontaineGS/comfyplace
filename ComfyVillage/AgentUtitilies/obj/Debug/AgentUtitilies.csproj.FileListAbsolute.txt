@@ -5,3 +5,11 @@ C:\ComfyProject\ComfyVillage\AgentUtitilies\obj\Debug\AgentUtitilies.dll
 C:\ComfyProject\ComfyVillage\AgentUtitilies\obj\Debug\AgentUtitilies.pdb
 C:\ComfyProject\ComfyVillage\AgentUtitilies\bin\Debug\TerrainUtilities.dll
 C:\ComfyProject\ComfyVillage\AgentUtitilies\bin\Debug\TerrainUtilities.pdb
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\AgentUtitilies\bin\Debug\AgentUtitilies.dll
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\AgentUtitilies\bin\Debug\AgentUtitilies.pdb
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\AgentUtitilies\bin\Debug\TerrainUtilities.dll
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\AgentUtitilies\bin\Debug\TerrainUtilities.pdb
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\AgentUtitilies\obj\Debug\AgentUtitilies.csprojResolveAssemblyReference.cache
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\AgentUtitilies\obj\Debug\AgentUtitilies.csproj.CoreCompileInputs.cache
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\AgentUtitilies\obj\Debug\AgentUtitilies.dll
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\AgentUtitilies\obj\Debug\AgentUtitilies.pdb

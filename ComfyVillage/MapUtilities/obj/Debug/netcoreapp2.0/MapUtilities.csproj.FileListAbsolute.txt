@@ -1,0 +1,9 @@
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\MapUtilities\bin\Debug\netcoreapp2.0\MapUtilities.deps.json
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\MapUtilities\bin\Debug\netcoreapp2.0\MapUtilities.dll
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.csprojResolveAssemblyReference.cache
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.csproj.CoreCompileInputs.cache
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.AssemblyInfoInputs.cache
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.AssemblyInfo.cs
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\MapUtilities\bin\Debug\netcoreapp2.0\MapUtilities.pdb
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.dll
+C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.pdb
