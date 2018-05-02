@@ -11,12 +11,6 @@ namespace AgentUtitilies
         public override void SetObjective()
         {
             throw new NotImplementedException();
-
-
-        }
-        public Rabbit() : base()
-        {
         }
     }
 }
-

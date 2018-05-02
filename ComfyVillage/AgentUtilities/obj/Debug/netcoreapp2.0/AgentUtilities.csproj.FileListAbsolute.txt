@@ -9,14 +9,3 @@ C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\AgentUtilities\bin\Debu
 C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\AgentUtilities\bin\Debug\netcoreapp2.0\MapUtilities.pdb
 C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\AgentUtilities\obj\Debug\netcoreapp2.0\AgentUtilities.dll
 C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\AgentUtilities\obj\Debug\netcoreapp2.0\AgentUtilities.pdb
-C:\REPOSITORY\comfyplace\ComfyVillage\AgentUtilities\bin\Debug\netcoreapp2.0\AgentUtilities.deps.json
-C:\REPOSITORY\comfyplace\ComfyVillage\AgentUtilities\bin\Debug\netcoreapp2.0\AgentUtilities.dll
-C:\REPOSITORY\comfyplace\ComfyVillage\AgentUtilities\bin\Debug\netcoreapp2.0\AgentUtilities.pdb
-C:\REPOSITORY\comfyplace\ComfyVillage\AgentUtilities\bin\Debug\netcoreapp2.0\MapUtilities.dll
-C:\REPOSITORY\comfyplace\ComfyVillage\AgentUtilities\bin\Debug\netcoreapp2.0\MapUtilities.pdb
-C:\REPOSITORY\comfyplace\ComfyVillage\AgentUtilities\obj\Debug\netcoreapp2.0\AgentUtilities.csprojResolveAssemblyReference.cache
-C:\REPOSITORY\comfyplace\ComfyVillage\AgentUtilities\obj\Debug\netcoreapp2.0\AgentUtilities.csproj.CoreCompileInputs.cache
-C:\REPOSITORY\comfyplace\ComfyVillage\AgentUtilities\obj\Debug\netcoreapp2.0\AgentUtilities.AssemblyInfoInputs.cache
-C:\REPOSITORY\comfyplace\ComfyVillage\AgentUtilities\obj\Debug\netcoreapp2.0\AgentUtilities.AssemblyInfo.cs
-C:\REPOSITORY\comfyplace\ComfyVillage\AgentUtilities\obj\Debug\netcoreapp2.0\AgentUtilities.dll
-C:\REPOSITORY\comfyplace\ComfyVillage\AgentUtilities\obj\Debug\netcoreapp2.0\AgentUtilities.pdb

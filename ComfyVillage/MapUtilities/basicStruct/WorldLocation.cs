@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,11 +8,8 @@ namespace TerrainUtilities.basicStruct
 {
     public class WorldLocation : Vector
     {
+        //Unités : m
 
-        public WorldLocation() : base()
-        {
-
-        }
 
         public float Distance(WorldLocation _location)
         {

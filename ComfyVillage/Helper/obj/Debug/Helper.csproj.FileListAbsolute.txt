@@ -9,9 +9,3 @@ C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\Helper\obj\Debug\Helper
 C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
 C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\Helper\obj\Debug\Helper.dll
 C:\ComfyProject\Comfy\comfyplace\comfyplace\ComfyVillage\Helper\obj\Debug\Helper.pdb
-C:\REPOSITORY\comfyplace\ComfyVillage\Helper\bin\Debug\Helper.dll
-C:\REPOSITORY\comfyplace\ComfyVillage\Helper\bin\Debug\Helper.pdb
-C:\REPOSITORY\comfyplace\ComfyVillage\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
-C:\REPOSITORY\comfyplace\ComfyVillage\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
-C:\REPOSITORY\comfyplace\ComfyVillage\Helper\obj\Debug\Helper.dll
-C:\REPOSITORY\comfyplace\ComfyVillage\Helper\obj\Debug\Helper.pdb

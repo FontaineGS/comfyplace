@@ -5209,11 +5209,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\LaunchingVillage\\LaunchingVillage.csproj",
+      "projectUniqueName": "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\LaunchingVillage\\LaunchingVillage.csproj",
       "projectName": "LaunchingVillage",
-      "projectPath": "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\LaunchingVillage\\LaunchingVillage.csproj",
+      "projectPath": "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\LaunchingVillage\\LaunchingVillage.csproj",
       "packagesPath": "C:\\Users\\Fontaine\\.nuget\\packages\\",
-      "outputPath": "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\LaunchingVillage\\obj\\",
+      "outputPath": "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\LaunchingVillage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -5234,20 +5234,20 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\MapUtilities\\MapUtilities.csproj": {
-              "projectPath": "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\MapUtilities\\MapUtilities.csproj"
+            "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\MapUtilities\\MapUtilities.csproj": {
+              "projectPath": "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\MapUtilities\\MapUtilities.csproj"
             },
-            "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\EF_IAUtilities\\EF_IAUtilities.csproj": {
-              "projectPath": "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\EF_IAUtilities\\EF_IAUtilities.csproj"
+            "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\EF_IAUtilities\\EF_IAUtilities.csproj": {
+              "projectPath": "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\EF_IAUtilities\\EF_IAUtilities.csproj"
             },
-            "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\EF_WorldUtilities\\EF_WorldUtilities.csproj": {
-              "projectPath": "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\EF_WorldUtilities\\EF_WorldUtilities.csproj"
+            "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\EF_WorldUtilities\\EF_WorldUtilities.csproj": {
+              "projectPath": "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\EF_WorldUtilities\\EF_WorldUtilities.csproj"
             },
-            "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\Helper\\Helper.csproj": {
-              "projectPath": "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\Helper\\Helper.csproj"
+            "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\Helper\\Helper.csproj": {
+              "projectPath": "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\Helper\\Helper.csproj"
             },
-            "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\AgentUtilities\\AgentUtilities.csproj": {
-              "projectPath": "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\AgentUtilities\\AgentUtilities.csproj"
+            "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\AgentUtilities\\AgentUtilities.csproj": {
+              "projectPath": "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\AgentUtilities\\AgentUtilities.csproj"
             }
           }
         }

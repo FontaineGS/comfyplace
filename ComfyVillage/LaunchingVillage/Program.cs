@@ -22,10 +22,10 @@ namespace LaunchingVillage
             while (true)
             {
 
+                Thread.Sleep(500);
                 resolver.Resolve();
                 Console.WriteLine(World.Agents.Count);
                 wrapper.WriteAll(jsonwriter.WriteToJson(World.Agents));
-                Thread.Sleep(1000);
 
 
             }

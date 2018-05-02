@@ -2768,11 +2768,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\MapUtilities\\MapUtilities.csproj",
+      "projectUniqueName": "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\MapUtilities\\MapUtilities.csproj",
       "projectName": "MapUtilities",
-      "projectPath": "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\MapUtilities\\MapUtilities.csproj",
+      "projectPath": "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\MapUtilities\\MapUtilities.csproj",
       "packagesPath": "C:\\Users\\Fontaine\\.nuget\\packages\\",
-      "outputPath": "C:\\REPOSITORY\\comfyplace\\ComfyVillage\\MapUtilities\\obj\\",
+      "outputPath": "C:\\ComfyProject\\Comfy\\comfyplace\\comfyplace\\ComfyVillage\\MapUtilities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",

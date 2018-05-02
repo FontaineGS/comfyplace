@@ -12,12 +12,9 @@ namespace AgentUtitilies
     public abstract class MovingAgent : IAgent
     {
         [Key]
-        public Guid Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
 
-        public MovingAgent()
-        {
-            Id = Guid.NewGuid();
-        }
 
         public abstract void SetObjective();
 

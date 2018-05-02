@@ -13,9 +13,6 @@ namespace AgentUtitilies
         
         public float Height;
         
-        public Tree() : base()
-        {
 
-        }
     }
 }
