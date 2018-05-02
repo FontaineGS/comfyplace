@@ -13,7 +13,11 @@ namespace AgentUtilities
         public WorldLocation Location { get; set; }
 
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
+
+        public StaticAgent()
+        {
+            Id = Guid.NewGuid();
+        }
     }
 }

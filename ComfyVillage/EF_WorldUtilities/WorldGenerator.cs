@@ -28,9 +28,11 @@ namespace WorldUtilities
             Random rand = new Random();
             for (int i =0; i < 200; i++)
             {
-                Tree a = new Tree();
-                a.Height = ((float)rand.NextDouble() * 10);
-                a.Location = GetRandomWorldLocation(world);
+                Tree a = new Tree
+                {
+                    Height = ((float)rand.NextDouble() * 10),
+                    Location = GetRandomWorldLocation(world)
+                };
                 world.Agents.Add(a);
             }
             for (int i = 0; i < 5; i++)
