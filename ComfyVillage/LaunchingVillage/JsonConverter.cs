@@ -9,7 +9,7 @@ namespace LaunchingVillage
     {
         public string WriteToJson(Object obj)
         {
-            JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+            JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto };
             
             return JsonConvert.SerializeObject(obj, settings);
         }
@@ -17,7 +17,7 @@ namespace LaunchingVillage
 
         public string WriteToJson(IEnumerable<Object> obj)
         {
-            JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+            JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto };
 
             return JsonConvert.SerializeObject(obj, settings);
         }
