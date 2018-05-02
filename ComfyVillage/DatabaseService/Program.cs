@@ -1,4 +1,5 @@
-﻿using DatabaseService.DbClass;
+﻿using DatabaseService.DatabaseUtilities;
+using DatabaseService.DbClass;
 using System;
 using System.Threading;
 
@@ -8,17 +9,24 @@ namespace DatabaseService
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            
-            RabbitListener listener = new RabbitListener();
-            ModelFeeder feeder = new ModelFeeder();
 
-            listener.Run(feeder.GetMessage);
-
-
-            while(true)
+            using (var villagecontext = new VillageContext())
             {
-                Thread.Sleep(500);
+                Console.WriteLine("Hello World!");
+
+                RabbitListener listener = new RabbitListener();
+
+                DbManager dbmanager = new DbManager(villagecontext);
+
+                ModelFeeder feeder = new ModelFeeder(dbmanager);
+
+                listener.Run(feeder.GetMessage);
+
+
+                while (true)
+                {
+                    Thread.Sleep(500);
+                }
             }
         }
 

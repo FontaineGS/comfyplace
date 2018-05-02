@@ -1,4 +1,5 @@
 ﻿using AgentUtitilies;
+using DatabaseService.DatabaseUtilities;
 using DatabaseService.DbClass;
 using System;
 using System.Collections.Generic;
@@ -9,15 +10,12 @@ namespace DatabaseService
 {
     public class ModelFeeder
     {
-        public VillageContext villageContext { get; set; }
 
+        public DbManager dbManager { get; set; }
 
-        public ModelFeeder(VillageContext context)
+        public ModelFeeder(DbManager dbmanager)
         {
-            villageContext = context;
-        }
-        public ModelFeeder()
-        {
+            dbManager = dbmanager;
         }
 
         public void GetMessage(string message)
@@ -30,9 +28,12 @@ namespace DatabaseService
 
             IEnumerable<Tree> treecollection = object_collection.Where(i => i is Tree).Select(j => (Tree)j);
 
-            villageContext.Agents.AddRange(rabbitcollection);
+            //dbManager.DeleteTables();
 
-            villageContext.Trees.AddRange(treecollection);
+            dbManager.UpdateTable(treecollection);
+
+            dbManager.UpdateTable(rabbitcollection);
+
         }
     }
 }

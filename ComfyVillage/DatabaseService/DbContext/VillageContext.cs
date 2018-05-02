@@ -9,9 +9,9 @@ namespace DatabaseService.DbClass
 {
     public class VillageContext : DbContext
     {
-        public VillageContext(DbContextOptions opts) : base(opts)
-        {
-        }
+        //public VillageContext(DbContextOptions opts) : base(opts)
+        //{
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -21,7 +21,7 @@ namespace DatabaseService.DbClass
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=.\;Database=EFCoreDemo;Trusted_Connection=True;MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=Village;Integrated Security=True");
         }
 
 
