@@ -6,15 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20180501172904_InitialCreate.cs" />
-    <Compile Remove="Migrations\20180501190204_Update_1.cs" />
-    <Compile Remove="Migrations\20180501190309_Update_1.cs" />
-    <Compile Remove="Migrations\20180501192106_Update_2.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="RabbitMQ.Client" Version="5.0.1" />
   </ItemGroup>

@@ -26,8 +26,6 @@ namespace LaunchingVillage
                 Console.WriteLine(World.Agents.Count);
                 wrapper.WriteAll(jsonwriter.WriteToJson(World.Agents));
                 Thread.Sleep(1000);
-
-
             }
         }
     }
