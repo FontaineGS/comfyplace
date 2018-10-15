@@ -21,7 +21,8 @@ namespace DatabaseService.DbClass
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=Village;Integrated Security=True");
+             optionsBuilder.UseSqlite("Data Source=village.db");
+            //optionsBuilder.UseSqlServer(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=Village;Integrated Security=True");
         }
 
 
