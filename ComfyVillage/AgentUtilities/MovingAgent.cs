@@ -37,7 +37,7 @@ namespace AgentUtitilies
         public WorldLocation objective = null;
 
 
-        public SpeedVector Speed { get; set; } = new SpeedVector();
+        public SpeedVector Speed { get; set; }
 
         public float currentVelocity { get; set; } = 5.0f;
         #endregion

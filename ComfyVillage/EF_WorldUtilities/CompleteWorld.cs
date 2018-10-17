@@ -13,18 +13,17 @@ namespace WorldUtilities
 
         public World GetWorldState(IAgent pov)
         {
-            return _subjectiveWorld;
+            return this as World;
         }
 
         #region specific world
 
-        World _subjectiveWorld = new World();
 
         #endregion
 
         #region specific 
 
-        public int TickTime { get; set; } = 500; //en ms
+        public static int TickTime  = 500; //en ms
 
         #endregion
     }

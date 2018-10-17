@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AgentUtilities\AgentUtilities.csproj" />
-    <ProjectReference Include="..\EF_WorldUtilities\EF_WorldUtilities.csproj" />
     <ProjectReference Include="..\MapUtilities\MapUtilities.csproj" />
   </ItemGroup>
 

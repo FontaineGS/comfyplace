@@ -16,9 +16,15 @@ namespace WorldUtilities
 
         public void Resolve()
         {
+
             Move();
         }
 
+        #region IA
+
+    
+
+        #endregion
 
         #region moving
         private void Move(MovingAgent agent, SpeedVector speed)

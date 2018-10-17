@@ -11,6 +11,8 @@ namespace WorldUtilities
 
         private List<IAgent> _agents = new List<IAgent>();
 
+        private List<IIA> _ias = new List<IIA>();
+
         Terrain _terrain = new Terrain();
 
         public List<IAgent> Agents
@@ -23,6 +25,20 @@ namespace WorldUtilities
             set
             {
                 _agents = value;
+            }
+        }
+
+
+        public List<IIAS> Ias
+        {
+            get
+            {
+                return _ias;
+            }
+
+            set
+            {
+                _ias = value;
             }
         }
 

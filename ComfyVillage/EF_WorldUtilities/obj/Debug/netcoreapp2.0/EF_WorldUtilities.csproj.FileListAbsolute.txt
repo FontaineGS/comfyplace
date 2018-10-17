@@ -38,3 +38,5 @@ C:/REPOSITORY/comfyplace/ComfyVillage/EF_WorldUtilities/obj/Debug/netcoreapp2.0/
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/EF_WorldUtilities/obj/Debug/netcoreapp2.0/EF_WorldUtilities.csproj.CopyComplete
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/EF_WorldUtilities/obj/Debug/netcoreapp2.0/EF_WorldUtilities.dll
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/EF_WorldUtilities/obj/Debug/netcoreapp2.0/EF_WorldUtilities.pdb
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/EF_WorldUtilities/bin/Debug/netcoreapp2.0/EF_IAUtilities.dll
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/EF_WorldUtilities/bin/Debug/netcoreapp2.0/EF_IAUtilities.pdb

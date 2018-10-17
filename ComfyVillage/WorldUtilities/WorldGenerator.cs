@@ -12,6 +12,8 @@ namespace WorldUtilities
     public class WorldGenerator
     {
         Random a = new Random();
+
+
         public CompleteWorld GenerateWorldTerrain()
         {
             var world = new CompleteWorld();
@@ -38,6 +40,11 @@ namespace WorldUtilities
                 Rabbit a = new Rabbit();
                 a.Location = GetRandomWorldLocation(world);
                 world.Agents.Add(a);
+
+                RabbitIA ia = new RabbitIA(a);
+                world.Ias.Add(ia);
+
+                
             }
         }
 

@@ -1598,7 +1598,6 @@
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "AgentUtilities": "1.0.0",
-          "EF_WorldUtilities": "1.0.0",
           "MapUtilities": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.1"
         },
@@ -1614,6 +1613,7 @@
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "AgentUtilities": "1.0.0",
+          "EF_IAUtilities": "1.0.0",
           "MapUtilities": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.1"
         },
