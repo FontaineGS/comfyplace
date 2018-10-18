@@ -25,6 +25,7 @@ namespace LaunchingVillage
                 resolver.Resolve();
                 Console.WriteLine(World.Agents.Count);
                 wrapper.WriteAll(jsonwriter.WriteToJson(World.Agents));
+                wrapper.WriteAll(jsonwriter.WriteToJson(World.Terrain), "terrain_queue");
                 Thread.Sleep(1000);
             }
         }

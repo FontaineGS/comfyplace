@@ -2,6 +2,7 @@
 using DatabaseService.DbClass;
 using System;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace DatabaseService
 {
@@ -20,8 +21,10 @@ namespace DatabaseService
 
                 ModelFeeder feeder = new ModelFeeder(dbmanager);
 
-                listener.Run(feeder.GetMessage);
-
+                var agent_task = new Task(() => listener.Run(feeder.GetAgentMessage, "agent_queue"));
+               var terrain_task = new Task(() =>listener.Run(feeder.GetTerrainMessage, "terrain_queue"));
+                agent_task.Start();
+            terrain_task.Start();
 
                 while (true)
                 {

@@ -23,17 +23,26 @@ namespace DatabaseService
             return JsonConvert.SerializeObject(obj, settings);
         }
 
-        public IEnumerable<IAgent> DeserializeJson(string json)
+        public object DeserializeJson(string json, Type _type)
         {
-            JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto };
+            try
+            {
+                JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto };
 
-            var list = JsonConvert.DeserializeObject(json, typeof(IEnumerable<IAgent>),settings);
+                var list = JsonConvert.DeserializeObject(json, _type, settings);
 
 
-            //var truc = list[0] as Rabbit;
-            //var machin = list[0] as Tree;
+                //var truc = list[0] as Rabbit;
+                //var machin = list[0] as Tree;
 
-            return list as IEnumerable<IAgent>;
+                return list;
+            }
+        
+            catch (Exception ex)
+            {
+           //     Console.WriteLine(ex.Message + json);
+                return null;
+            }
         }
     }
 }

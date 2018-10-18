@@ -37,7 +37,7 @@ namespace WorldUtilities
                 };
                 world.Agents.Add(a);
             }
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 1; i++)
             {
                 Rabbit a = new Rabbit();
                 a.Location = GetRandomWorldLocation(world);
@@ -54,7 +54,7 @@ namespace WorldUtilities
         {
             var location = new WorldLocation();
 
-            var lenght = world.Terrain.HeightMap.Length;
+            var lenght = world.Terrain.SIZE;
 
            
 

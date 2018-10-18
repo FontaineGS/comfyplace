@@ -23,6 +23,13 @@ namespace TerrainUtilities.basicStruct
             Id = Guid.NewGuid();
         }
 
+        public double Length
+        {
+            get{
+            return Math.Sqrt(X*X + Y*Y + Z*Z);
+            }
+        }
+
         public static Vector operator -(Vector w1, Vector w2)
         {
             return new Vector() { X = w1.X - w2.X, Y = w1.Y - w2.Y, Z = w1.Z - w2.Z };

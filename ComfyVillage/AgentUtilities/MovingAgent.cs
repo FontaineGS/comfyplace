@@ -39,7 +39,7 @@ namespace AgentUtitilies
 
         public SpeedVector Speed { get; set; }
 
-        public float currentVelocity { get; set; } = 5.0f;
+        public float currentVelocity { get; set; } = 1.0f;
         #endregion
     }
 }

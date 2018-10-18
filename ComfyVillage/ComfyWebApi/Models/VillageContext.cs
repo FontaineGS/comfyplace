@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using AgentUtitilies;
+using TerrainUtilities;
 
 namespace ComfyWebApi.Models
 {
@@ -12,5 +13,7 @@ namespace ComfyWebApi.Models
 
         public DbSet<Rabbit> Rabbits { get; set; }
         public DbSet<Tree> Trees { get; set; }
+        public DbSet<Terrain> Terrain {get;set;}
+
     }
 }

@@ -3,14 +3,16 @@ using System;
 using DatabaseService.DbClass;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DatabaseService.Migrations
 {
     [DbContext(typeof(VillageContext))]
-    partial class VillageContextModelSnapshot : ModelSnapshot
+    [Migration("20181018121156_addingterrain")]
+    partial class addingterrain
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -86,8 +88,6 @@ namespace DatabaseService.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
-
-                    b.Property<int>("SIZE");
 
                     b.HasKey("Id");
 

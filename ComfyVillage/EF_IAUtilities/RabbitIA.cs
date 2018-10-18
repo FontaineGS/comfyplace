@@ -15,8 +15,16 @@ namespace IAUtilities
             if (_rabbit != null)
             {
                 Tree target = NearestTree(_agents.Where(i => i.GetType() == typeof(Tree)).Select(j => j as Tree));
-                if (target != null)
+                Console.WriteLine("Distance : " + _rabbit.Location.Distance(target.Location) );
+                Console.WriteLine("Vitesse : " + _rabbit.currentVelocity);
+                if (target != null && _rabbit.Location.Distance(target.Location) >_rabbit.currentVelocity)
+                {
                     MoveTo(target.Location);
+                 }
+                else
+                {
+                    Stop();
+                }
             }
 
         }
@@ -31,7 +39,7 @@ namespace IAUtilities
                     temp = tree;
                 }
                 if (_rabbit.Location.Distance(tree.Location) < _rabbit.Location.Distance(temp.Location))
-                { 
+                {
                     temp = tree;
                 }
             }
@@ -43,17 +51,28 @@ namespace IAUtilities
             var speed = _rabbit.currentVelocity;
             var vector = direction - _rabbit.Location;
 
-          //  var distance = direction.Distance(_rabbit.Location);
-         // **  var coeff = speed / distance;
+            var distance = direction.Distance(_rabbit.Location);
+            var coeff = speed / distance;
 
-     //    **   vector = (vector / coeff);
+            vector = (vector * coeff);
+            if (vector.Length > speed)
+            {   
+                vector = vector * (float)(vector.Length / coeff);
+            }
 
             _rabbit.Speed.X = vector.X;
             _rabbit.Speed.Y = vector.Y;
             _rabbit.Speed.Z = vector.Z;
 
-            
-          //  Console.WriteLine(_rabbit.Speed.X + " " + _rabbit.Speed.Y + " " + _rabbit.Speed.Z);
+
+            //  Console.WriteLine(_rabbit.Speed.X + " " + _rabbit.Speed.Y + " " + _rabbit.Speed.Z);
+        }
+
+        private void Stop()
+        {
+            _rabbit.Speed.X = 0;
+            _rabbit.Speed.Y = 0;
+            _rabbit.Speed.Z = 0;
         }
 
 
