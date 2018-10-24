@@ -62,3 +62,5 @@ C:/REPOSITORY/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/L
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/LaunchingVillage.csproj.CopyComplete
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/LaunchingVillage.dll
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/LaunchingVillage.pdb
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/bin/Debug/netcoreapp2.0/WSVillagePlugin.dll
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/bin/Debug/netcoreapp2.0/WSVillagePlugin.pdb

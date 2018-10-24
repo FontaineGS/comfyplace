@@ -37,10 +37,10 @@ namespace WorldUtilities
             float tick = (float)CompleteWorld.TickTime / 1000; //en secondes
 
 
-            Console.WriteLine(" " + tick);
-            Console.WriteLine(speed.X + " " +speed.Y);
+            //Console.WriteLine(" " + tick);
+            //Console.WriteLine(speed.X + " " +speed.Y);
 
-            Console.WriteLine(agent.Location.X + " " +agent.Location.Y);
+            //Console.WriteLine(agent.Location.X + " " +agent.Location.Y);
             float _x = agent.Location.X + speed.X * tick;
             float _y = agent.Location.Y + speed.Y * tick;
             float _z = agent.Location.Z + speed.Z * tick;
@@ -49,7 +49,7 @@ namespace WorldUtilities
             agent.Location.Y = _y;
             agent.Location.Z = _z;
 
-            Console.WriteLine(_x + " " +_y);
+            //Console.WriteLine(_x + " " +_y);
         }
 
         private void Move()

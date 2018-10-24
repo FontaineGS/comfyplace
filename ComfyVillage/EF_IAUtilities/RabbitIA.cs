@@ -15,8 +15,8 @@ namespace IAUtilities
             if (_rabbit != null)
             {
                 Tree target = NearestTree(_agents.Where(i => i.GetType() == typeof(Tree)).Select(j => j as Tree));
-                Console.WriteLine("Distance : " + _rabbit.Location.Distance(target.Location) );
-                Console.WriteLine("Vitesse : " + _rabbit.currentVelocity);
+                //Console.WriteLine("Distance : " + _rabbit.Location.Distance(target.Location) );
+               // Console.WriteLine("Vitesse : " + _rabbit.currentVelocity);
                 if (target != null && _rabbit.Location.Distance(target.Location) >_rabbit.currentVelocity)
                 {
                     MoveTo(target.Location);

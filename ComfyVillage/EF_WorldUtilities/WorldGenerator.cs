@@ -28,7 +28,7 @@ namespace WorldUtilities
         public void Populate(CompleteWorld world)
         {
             Random rand = new Random();
-            for (int i =0; i < 1; i++)
+            for (int i =0; i < 5; i++)
             {
                 Tree a = new Tree
                 {
@@ -37,7 +37,7 @@ namespace WorldUtilities
                 };
                 world.Agents.Add(a);
             }
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < 30; i++)
             {
                 Rabbit a = new Rabbit();
                 a.Location = GetRandomWorldLocation(world);
