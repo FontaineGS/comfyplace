@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using TerrainUtilities;
 using TerrainUtilities.basicStruct;
 
+using IAUtilities;
+
 namespace WorldUtilities
 {
     public class WorldGenerator
@@ -26,7 +28,7 @@ namespace WorldUtilities
         public void Populate(CompleteWorld world)
         {
             Random rand = new Random();
-            for (int i =0; i < 200; i++)
+            for (int i =0; i < 5; i++)
             {
                 Tree a = new Tree
                 {
@@ -35,11 +37,16 @@ namespace WorldUtilities
                 };
                 world.Agents.Add(a);
             }
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 30; i++)
             {
                 Rabbit a = new Rabbit();
                 a.Location = GetRandomWorldLocation(world);
+                a.Speed = new SpeedVector();
                 world.Agents.Add(a);
+
+
+                RabbitIA ia = new RabbitIA(a);
+                world.Ias.Add(ia);
             }
         }
 
@@ -47,14 +54,13 @@ namespace WorldUtilities
         {
             var location = new WorldLocation();
 
-            var lenght = world.Terrain.HeightMap.Length;
+            var lenght = world.Terrain.SIZE;
 
            
 
             location.X = (float)a.NextDouble() * lenght;
             location.Y = (float)a.NextDouble() * lenght;
-            location.Z = (float)a.NextDouble() * lenght;
-
+            location.Z = 0;// (float)a.NextDouble() * lenght;
             return location;
         }
     }

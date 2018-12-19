@@ -4,23 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace TerrainUtilities
 {
     public class Terrain
     {
+        [Key]
+        public Guid Id { get; set; }
         public int PRECISION = 7;
-        public int SIZE;
+        public int SIZE {get;set;}
         public double[,] HeightMap = null;
 
-        public Terrain(int value = 4)
+        public Terrain(int value)
         {
-            PRECISION  = value;
+            PRECISION = value;
+            SIZE = (int)Math.Pow(2, PRECISION) + 1;
+        }
+
+        public Terrain()
+        {
+            PRECISION = 7;
             SIZE = (int)Math.Pow(2, PRECISION) + 1;
         }
         public void Init()
         {
 
-            HeightMap =  new double[SIZE, SIZE];
+            HeightMap = new double[SIZE, SIZE];
             for (int i = 0; i < SIZE; i++)
             {
                 for (int j = 0; j < SIZE; j++)
@@ -30,6 +41,6 @@ namespace TerrainUtilities
             }
         }
 
-      
+
     }
 }

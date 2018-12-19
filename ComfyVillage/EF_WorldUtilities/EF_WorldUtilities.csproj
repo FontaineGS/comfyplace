@@ -11,6 +11,8 @@
   <ItemGroup>
     <ProjectReference Include="..\AgentUtilities\AgentUtilities.csproj" />
     <ProjectReference Include="..\MapUtilities\MapUtilities.csproj" />
+    <ProjectReference Include="..\s\MapUtilities.csproj" />
+    <ProjectReference Include="..\EF_IAUtilities\EF_IAUtilities.csproj" />
   </ItemGroup>
 
 </Project>

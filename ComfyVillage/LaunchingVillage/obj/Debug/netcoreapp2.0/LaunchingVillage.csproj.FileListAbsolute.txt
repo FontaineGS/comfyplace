@@ -40,8 +40,6 @@ C:/REPOSITORY/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/L
 C:/REPOSITORY/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/LaunchingVillage.AssemblyInfo.cs
 C:/REPOSITORY/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/LaunchingVillage.dll
 C:/REPOSITORY/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/LaunchingVillage.pdb
-/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/LaunchingVillage.dll
-/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/LaunchingVillage.pdb
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/bin/Debug/netcoreapp2.0/LaunchingVillage.deps.json
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/bin/Debug/netcoreapp2.0/LaunchingVillage.runtimeconfig.json
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/bin/Debug/netcoreapp2.0/LaunchingVillage.runtimeconfig.dev.json
@@ -62,3 +60,7 @@ C:/REPOSITORY/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/L
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/LaunchingVillage.AssemblyInfoInputs.cache
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/LaunchingVillage.AssemblyInfo.cs
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/LaunchingVillage.csproj.CopyComplete
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/LaunchingVillage.dll
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/obj/Debug/netcoreapp2.0/LaunchingVillage.pdb
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/bin/Debug/netcoreapp2.0/WSVillagePlugin.dll
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/LaunchingVillage/bin/Debug/netcoreapp2.0/WSVillagePlugin.pdb

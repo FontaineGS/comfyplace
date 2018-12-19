@@ -1,0 +1,9 @@
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/WSVillagePlugin/obj/Debug/netstandard2.0/WSVillagePlugin.csprojAssemblyReference.cache
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/WSVillagePlugin/obj/Debug/netstandard2.0/WSVillagePlugin.csproj.CoreCompileInputs.cache
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/WSVillagePlugin/obj/Debug/netstandard2.0/WSVillagePlugin.AssemblyInfoInputs.cache
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/WSVillagePlugin/obj/Debug/netstandard2.0/WSVillagePlugin.AssemblyInfo.cs
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/WSVillagePlugin/bin/Debug/netstandard2.0/WSVillagePlugin.deps.json
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/WSVillagePlugin/bin/Debug/netstandard2.0/WSVillagePlugin.dll
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/WSVillagePlugin/bin/Debug/netstandard2.0/WSVillagePlugin.pdb
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/WSVillagePlugin/obj/Debug/netstandard2.0/WSVillagePlugin.dll
+/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/WSVillagePlugin/obj/Debug/netstandard2.0/WSVillagePlugin.pdb

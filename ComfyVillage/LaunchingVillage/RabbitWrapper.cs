@@ -17,12 +17,12 @@ namespace LaunchingVillage
 
         }
 
-        public  void WriteAll(string message)
+        public  void WriteAll(string message, string queue_name = "agent_queue")
         {
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
-                channel.QueueDeclare(queue: "agent_queue",
+                channel.QueueDeclare(queue: queue_name,
                                      durable: false,
                                      exclusive: false,
                                      autoDelete: false,
@@ -32,12 +32,14 @@ namespace LaunchingVillage
                 var body = Encoding.UTF8.GetBytes(message);
 
                 channel.BasicPublish(exchange: "",
-                                     routingKey: "agent_queue",
+                                     routingKey: queue_name,
                                      basicProperties: null,
                                      body: body);
                 Console.WriteLine("objets envoyés");
             }
             
         }
+
+
     }
 }

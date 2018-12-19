@@ -692,6 +692,21 @@
           "bin/placeholder/AgentUtilities.dll": {}
         }
       },
+      "EF_IAUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "AgentUtilities": "1.0.0",
+          "MapUtilities": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.0.1"
+        },
+        "compile": {
+          "bin/placeholder/EF_IAUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EF_IAUtilities.dll": {}
+        }
+      },
       "MapUtilities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -2801,6 +2816,11 @@
       "path": "../AgentUtilities/AgentUtilities.csproj",
       "msbuildProject": "../AgentUtilities/AgentUtilities.csproj"
     },
+    "EF_IAUtilities/1.0.0": {
+      "type": "project",
+      "path": "../EF_IAUtilities/EF_IAUtilities.csproj",
+      "msbuildProject": "../EF_IAUtilities/EF_IAUtilities.csproj"
+    },
     "MapUtilities/1.0.0": {
       "type": "project",
       "path": "../MapUtilities/MapUtilities.csproj",
@@ -2810,6 +2830,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "AgentUtilities >= 1.0.0",
+      "EF_IAUtilities >= 1.0.0",
       "MapUtilities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0"
@@ -2845,6 +2866,9 @@
           "projectReferences": {
             "/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/AgentUtilities/AgentUtilities.csproj": {
               "projectPath": "/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/AgentUtilities/AgentUtilities.csproj"
+            },
+            "/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/EF_IAUtilities/EF_IAUtilities.csproj": {
+              "projectPath": "/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/EF_IAUtilities/EF_IAUtilities.csproj"
             },
             "/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/MapUtilities/MapUtilities.csproj": {
               "projectPath": "/home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/MapUtilities/MapUtilities.csproj"

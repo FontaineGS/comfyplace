@@ -1,4 +1,5 @@
 ﻿using AgentUtitilies;
+using TerrainUtilities;
 using DatabaseService.DbClass;
 using System;
 using System.Collections.Generic;
@@ -39,11 +40,14 @@ namespace DatabaseService.DatabaseUtilities
                 {
                     var entry = villageContext.Agents.SingleOrDefault(x => x.Id.Equals(rabbit.Id));
                     villageContext.Entry(entry).CurrentValues.SetValues(rabbit);
+                    villageContext.Entry(entry.Location).CurrentValues.SetValues(rabbit.Location);
+                    villageContext.Entry(entry.Speed).CurrentValues.SetValues(rabbit.Speed);
+
                 }
             }
-           
-                villageContext.SaveChanges();
-            
+
+            villageContext.SaveChanges();
+
         }
 
         public void UpdateTable(IEnumerable<Tree> treecollection)
@@ -58,10 +62,35 @@ namespace DatabaseService.DatabaseUtilities
                 {
                     var entry = villageContext.Trees.SingleOrDefault(x => x.Id.Equals(tree.Id));
                     villageContext.Entry(entry).CurrentValues.SetValues(tree);
+                    villageContext.Entry(tree.Location).CurrentValues.SetValues(tree.Location);
                 }
             }
 
             villageContext.SaveChanges();
+        }
+
+        public void UpdateTable(Terrain terrain)
+        {
+            try
+            {
+                if (villageContext.Terrain.Count() == 0)
+                {
+                    villageContext.Terrain.Add(terrain);
+                    Console.WriteLine("adding Terrain");
+                }
+
+                /*        else
+
+                Console.WriteLine("what the fuck broda");
+                           var entry = villageContext.Trees.SingleOrDefault(x => x.Id.Equals(tree.Id));
+                       villageContext.Entry(entry).CurrentValues.SetValues(tree);
+                       villageContext.Entry(tree.Location).CurrentValues.SetValues(tree.Location);*/
+                villageContext.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                //Console.WriteLine("aaaaaaaaaa" + e.Message);
+            }
         }
 
 

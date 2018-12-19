@@ -82,6 +82,18 @@ namespace DatabaseService.Migrations
                     b.ToTable("WorldLocation");
                 });
 
+            modelBuilder.Entity("TerrainUtilities.Terrain", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("SIZE");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Terrain");
+                });
+
             modelBuilder.Entity("AgentUtitilies.Rabbit", b =>
                 {
                     b.HasOne("TerrainUtilities.basicStruct.WorldLocation", "Location")

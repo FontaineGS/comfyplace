@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WorldUtilities;
+using AgentUtitilies;
 
 namespace IAUtilities
 {
@@ -14,6 +14,6 @@ namespace IAUtilities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public abstract void Compute(World sworld);
+        public abstract void Compute(IEnumerable<IAgent> sworld);
     }
 }

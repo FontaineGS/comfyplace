@@ -1,4 +1,6 @@
 ﻿using AgentUtitilies;
+using TerrainUtilities;
+
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -17,6 +19,8 @@ namespace DatabaseService.DbClass
         {
             modelBuilder.Entity<Rabbit>().ToTable("Rabbits");
             modelBuilder.Entity<Tree>().ToTable("Trees");
+            modelBuilder.Entity<Terrain>().ToTable("Terrain");
+
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -28,5 +32,6 @@ namespace DatabaseService.DbClass
 
         public DbSet<Rabbit> Agents { get; set; }
         public DbSet<Tree> Trees { get; set; }
+        public DbSet<Terrain> Terrain {get;set;}
     }
 }
