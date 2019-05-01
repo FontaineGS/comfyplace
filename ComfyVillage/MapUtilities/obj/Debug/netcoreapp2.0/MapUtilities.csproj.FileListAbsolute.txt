@@ -25,3 +25,11 @@ C:/REPOSITORY/comfyplace/ComfyVillage/MapUtilities/obj/Debug/netcoreapp2.0/MapUt
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/MapUtilities/obj/Debug/netcoreapp2.0/MapUtilities.AssemblyInfo.cs
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/MapUtilities/obj/Debug/netcoreapp2.0/MapUtilities.dll
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/MapUtilities/obj/Debug/netcoreapp2.0/MapUtilities.pdb
+C:\ComfyProject\comfyplace\ComfyVillage\MapUtilities\bin\Debug\netcoreapp2.0\MapUtilities.deps.json
+C:\ComfyProject\comfyplace\ComfyVillage\MapUtilities\bin\Debug\netcoreapp2.0\MapUtilities.dll
+C:\ComfyProject\comfyplace\ComfyVillage\MapUtilities\bin\Debug\netcoreapp2.0\MapUtilities.pdb
+C:\ComfyProject\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.csproj.CoreCompileInputs.cache
+C:\ComfyProject\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.AssemblyInfoInputs.cache
+C:\ComfyProject\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.AssemblyInfo.cs
+C:\ComfyProject\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.dll
+C:\ComfyProject\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.pdb

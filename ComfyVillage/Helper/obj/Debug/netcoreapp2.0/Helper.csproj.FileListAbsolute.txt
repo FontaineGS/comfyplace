@@ -7,3 +7,12 @@
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/Helper/obj/Debug/netcoreapp2.0/Helper.AssemblyInfo.cs
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/Helper/obj/Debug/netcoreapp2.0/Helper.dll
 /home/utilisateur/Documents/Fontaine_test/backapp/comfyplace/ComfyVillage/Helper/obj/Debug/netcoreapp2.0/Helper.pdb
+C:\ComfyProject\comfyplace\ComfyVillage\Helper\bin\Debug\netcoreapp2.0\Helper.deps.json
+C:\ComfyProject\comfyplace\ComfyVillage\Helper\bin\Debug\netcoreapp2.0\Helper.dll
+C:\ComfyProject\comfyplace\ComfyVillage\Helper\bin\Debug\netcoreapp2.0\Helper.pdb
+C:\ComfyProject\comfyplace\ComfyVillage\Helper\obj\Debug\netcoreapp2.0\Helper.csproj.CoreCompileInputs.cache
+C:\ComfyProject\comfyplace\ComfyVillage\Helper\obj\Debug\netcoreapp2.0\Helper.AssemblyInfoInputs.cache
+C:\ComfyProject\comfyplace\ComfyVillage\Helper\obj\Debug\netcoreapp2.0\Helper.AssemblyInfo.cs
+C:\ComfyProject\comfyplace\ComfyVillage\Helper\obj\Debug\netcoreapp2.0\Helper.dll
+C:\ComfyProject\comfyplace\ComfyVillage\Helper\obj\Debug\netcoreapp2.0\Helper.pdb
+C:\ComfyProject\comfyplace\ComfyVillage\Helper\obj\Debug\netcoreapp2.0\Helper.csprojAssemblyReference.cache
