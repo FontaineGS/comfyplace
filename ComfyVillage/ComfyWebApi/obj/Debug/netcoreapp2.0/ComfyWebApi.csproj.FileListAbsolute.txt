@@ -1,4 +1,0 @@
-C:\ComfyProject\comfyplace\ComfyVillage\ComfyWebApi\obj\Debug\netcoreapp2.0\ComfyWebApi.csprojResolveAssemblyReference.cache
-C:\ComfyProject\comfyplace\ComfyVillage\ComfyWebApi\obj\Debug\netcoreapp2.0\ComfyWebApi.csproj.CoreCompileInputs.cache
-C:\ComfyProject\comfyplace\ComfyVillage\ComfyWebApi\obj\Debug\netcoreapp2.0\ComfyWebApi.AssemblyInfoInputs.cache
-C:\ComfyProject\comfyplace\ComfyVillage\ComfyWebApi\obj\Debug\netcoreapp2.0\ComfyWebApi.AssemblyInfo.cs
