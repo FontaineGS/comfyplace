@@ -2,7 +2,6 @@
 using System.Threading;
 using System.Threading.Tasks;
 using WorldUtilities;
-using WSVillagePlugin;
 
 namespace LaunchingVillage
 {
@@ -20,17 +19,17 @@ namespace LaunchingVillage
 
             JsonConverter jsonwriter = new JsonConverter();
 
-            var task = new Task(() => WSServer.Setup(null));
-            task.RunSynchronously();
+           /* var task = new Task(() => WSServer.Setup(null));
+            task.RunSynchronously();*/
 
             resolver.World = World;
             while (true)
             {
 
                 resolver.Resolve();
-                //Console.WriteLine(World.Agents.Count);
-                //wrapper.WriteAll(jsonwriter.WriteToJson(World.Agents));
-                //wrapper.WriteAll(jsonwriter.WriteToJson(World.Terrain), "terrain_queue");
+                Console.WriteLine(World.Agents.Count);
+                wrapper.WriteAll(jsonwriter.WriteToJson(World.Agents));
+                wrapper.WriteAll(jsonwriter.WriteToJson(World.Terrain), "terrain_queue");
                 Thread.Sleep(1000);
             }
         }

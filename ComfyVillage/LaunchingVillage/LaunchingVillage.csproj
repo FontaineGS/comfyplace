@@ -18,7 +18,7 @@
     <ProjectReference Include="..\EF_WorldUtilities\EF_WorldUtilities.csproj" />
     <ProjectReference Include="..\Helper\Helper.csproj" />
     <ProjectReference Include="..\MapUtilities\MapUtilities.csproj" />
-    <ProjectReference Include="..\WSVillagePlugin\WSVillagePlugin.csproj" />
+    <!--<ProjectReference Include="..\WSVillagePlugin\WSVillagePlugin.csproj" />-->
   </ItemGroup>
 
 </Project>

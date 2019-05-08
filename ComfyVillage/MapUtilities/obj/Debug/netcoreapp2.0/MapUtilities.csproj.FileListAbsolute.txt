@@ -33,3 +33,4 @@ C:\ComfyProject\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\Map
 C:\ComfyProject\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.AssemblyInfo.cs
 C:\ComfyProject\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.dll
 C:\ComfyProject\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.pdb
+C:\ComfyProject\comfyplace\ComfyVillage\MapUtilities\obj\Debug\netcoreapp2.0\MapUtilities.csprojAssemblyReference.cache
