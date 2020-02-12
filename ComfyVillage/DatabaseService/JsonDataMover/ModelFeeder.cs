@@ -1,5 +1,5 @@
-﻿using AgentUtitilies;
-using TerrainUtilities;
+﻿using CV.Agents;
+using CV.Map;
 using DatabaseService.DatabaseUtilities;
 using DatabaseService.DbClass;
 using System;

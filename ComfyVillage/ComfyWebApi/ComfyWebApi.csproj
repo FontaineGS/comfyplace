@@ -22,8 +22,8 @@
   <ItemGroup>
     <ProjectReference Include="..\AgentUtilities\AgentUtilities.csproj" />
     <ProjectReference Include="..\EF_IAUtilities\EF_IAUtilities.csproj" />
-    <ProjectReference Include="..\EF_WorldUtilities\EF_WorldUtilities.csproj" />
-    <ProjectReference Include="..\MapUtilities\MapUtilities.csproj" />
+    <ProjectReference Include="..\EF_CV.World\EF_CV.World.csproj" />
+    <ProjectReference Include="..\CV.Map\CV.Map.csproj" />
   </ItemGroup>
 
 </Project>

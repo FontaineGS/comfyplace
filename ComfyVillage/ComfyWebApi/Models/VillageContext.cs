@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using AgentUtitilies;
-using TerrainUtilities;
+using CV.Agents;
+using CV.Map;
 
 namespace ComfyWebApi.Models
 {

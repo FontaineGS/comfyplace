@@ -21,7 +21,7 @@ namespace DatabaseService.Migrations
                 .HasAnnotation("ProductVersion", "2.0.2-rtm-10011")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("AgentUtitilies.Rabbit", b =>
+            modelBuilder.Entity("CV.Agents.Rabbit", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -41,7 +41,7 @@ namespace DatabaseService.Migrations
                     b.ToTable("Rabbits");
                 });
 
-            modelBuilder.Entity("AgentUtitilies.Tree", b =>
+            modelBuilder.Entity("CV.Agents.Tree", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -55,7 +55,7 @@ namespace DatabaseService.Migrations
                     b.ToTable("Trees");
                 });
 
-            modelBuilder.Entity("TerrainUtilities.basicStruct.SpeedVector", b =>
+            modelBuilder.Entity("CV.Map.basicStruct.SpeedVector", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -71,7 +71,7 @@ namespace DatabaseService.Migrations
                     b.ToTable("SpeedVector");
                 });
 
-            modelBuilder.Entity("TerrainUtilities.basicStruct.WorldLocation", b =>
+            modelBuilder.Entity("CV.Map.basicStruct.WorldLocation", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -87,20 +87,20 @@ namespace DatabaseService.Migrations
                     b.ToTable("WorldLocation");
                 });
 
-            modelBuilder.Entity("AgentUtitilies.Rabbit", b =>
+            modelBuilder.Entity("CV.Agents.Rabbit", b =>
                 {
-                    b.HasOne("TerrainUtilities.basicStruct.WorldLocation", "Location")
+                    b.HasOne("CV.Map.basicStruct.WorldLocation", "Location")
                         .WithMany()
                         .HasForeignKey("LocationId");
 
-                    b.HasOne("TerrainUtilities.basicStruct.SpeedVector", "Speed")
+                    b.HasOne("CV.Map.basicStruct.SpeedVector", "Speed")
                         .WithMany()
                         .HasForeignKey("SpeedId");
                 });
 
-            modelBuilder.Entity("AgentUtitilies.Tree", b =>
+            modelBuilder.Entity("CV.Agents.Tree", b =>
                 {
-                    b.HasOne("TerrainUtilities.basicStruct.WorldLocation", "Location")
+                    b.HasOne("CV.Map.basicStruct.WorldLocation", "Location")
                         .WithMany()
                         .HasForeignKey("LocationId");
                 });

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ComfyWebApi.Models;
-using AgentUtitilies;
-using TerrainUtilities;
+using CV.Agents;
+using CV.Map;
 using Microsoft.EntityFrameworkCore;
 
 namespace ComfyWebApi.Controllers

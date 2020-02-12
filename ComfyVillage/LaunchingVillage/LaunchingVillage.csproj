@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,11 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AgentUtilities\AgentUtilities.csproj" />
-    <ProjectReference Include="..\EF_IAUtilities\EF_IAUtilities.csproj" />
-    <ProjectReference Include="..\EF_WorldUtilities\EF_WorldUtilities.csproj" />
-    <ProjectReference Include="..\Helper\Helper.csproj" />
-    <ProjectReference Include="..\MapUtilities\MapUtilities.csproj" />
+    <ProjectReference Include="..\CV.Agents\CV.Agents.csproj" />
+    <ProjectReference Include="..\CV.World\CV.World.csproj" />
+    <ProjectReference Include="..\CV.Ai\CV.Ai.csproj" />
+    <ProjectReference Include="..\CV.Map\CV.Map.csproj" />
+    <ProjectReference Include="..\CV.Helper\CV.Helper.csproj" />
     <!--<ProjectReference Include="..\WSVillagePlugin\WSVillagePlugin.csproj" />-->
   </ItemGroup>
 
