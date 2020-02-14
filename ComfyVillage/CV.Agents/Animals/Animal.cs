@@ -6,6 +6,8 @@ namespace CV.Agents.Animals
 {
     public abstract class Animal : MovingAgent
     {
+        public bool IsAlive { get; } = true;
 
+        public abstract int Meat { get; }
     }
 }
