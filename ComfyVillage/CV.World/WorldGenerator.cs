@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CV.Agents.Animals;
 using CV.Map;
 using CV.Map.basicStruct;
 
 using CV.Ai;
+using CV.Ai.AnimalsAI;
 
 namespace CV.World
 {
@@ -45,7 +47,19 @@ namespace CV.World
                 world.Agents.Add(a);
 
 
-                RabbitIA ia = new RabbitIA(a);
+                RabbitAI ia = new RabbitAI(a);
+                world.Ias.Add(ia);
+            }
+
+            for (int i = 0; i < 30; i++)
+            {
+                Fox a = new Fox();
+                a.Location = GetRandomWorldLocation(world);
+                a.Speed = new SpeedVector();
+                world.Agents.Add(a);
+
+
+                FoxAI ia = new FoxAI(a);
                 world.Ias.Add(ia);
             }
         }

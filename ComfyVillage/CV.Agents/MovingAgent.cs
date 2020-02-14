@@ -9,21 +9,14 @@ using CV.Map.basicStruct;
 
 namespace CV.Agents
 {
-    public abstract class MovingAgent : IAgent
+    public abstract class MovingAgent : IAgent, IMovingAgent
     {
         [Key]
         public Guid Id { get; set; }
 
-        public MovingAgent()
+        protected MovingAgent()
         {
             Id = Guid.NewGuid();
-        }
-
-        public abstract void SetObjective();
-
-        public void Process()
-        {
-
         }
 
         public WorldLocation Location
@@ -32,14 +25,18 @@ namespace CV.Agents
         }
 
         #region moving element
-        
-
-        public WorldLocation objective = null;
-
 
         public SpeedVector Speed { get; set; }
-
-        public float currentVelocity { get; set; } = 1.0f;
+        public  abstract float MaxVelocity { get; }
+        public abstract Func<float, float> SpeedConsumption { get; }
         #endregion
+
+        #region ressources
+
+        public abstract int Energy { get; }
+        public abstract int Fatigue { get; }
+        #endregion
+
+
     }
 }

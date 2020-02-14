@@ -25,7 +25,6 @@ namespace CV.Map
 
         public Terrain()
         {
-            PRECISION = 7;
             SIZE = (int)Math.Pow(2, PRECISION) + 1;
         }
         public void Init()

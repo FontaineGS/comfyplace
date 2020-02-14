@@ -9,7 +9,6 @@ namespace CV.Agents
 {
     public interface IAgent
     { 
-
         WorldLocation Location { get;}
     }
 }

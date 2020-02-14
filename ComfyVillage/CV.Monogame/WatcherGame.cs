@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using CV.Agents.Animals;
 
 namespace CV.Monogame
 {
@@ -18,6 +19,7 @@ namespace CV.Monogame
         CompleteWorld _world;
         Texture2D treeTexture;
         Texture2D rabbitTexture;
+        Texture2D foxTexture;
 
         double _timeSinceLastTurn = 0;
 
@@ -56,6 +58,7 @@ namespace CV.Monogame
 
             treeTexture = Content.Load<Texture2D>("tree");
             rabbitTexture = Content.Load<Texture2D>("rabbit");
+            foxTexture = Content.Load<Texture2D>("fox");
             // TODO: use this.Content to load your game content here
         }
 
@@ -108,9 +111,19 @@ namespace CV.Monogame
                     DrawRabbit(agent as Rabbit);
                 if (agent is Tree)
                     DrawTree(agent as Tree);
+                if (agent is Fox)
+                    DrawFox(agent as Fox);
             }
 
             base.Draw(gameTime);
+        }
+
+        private void DrawFox(Fox fox)
+        {
+            spriteBatch.Begin();
+            spriteBatch.Draw(foxTexture, new Vector2(fox.Location.X, fox.Location.Y), null, Color.White, 0f, new Vector2(foxTexture.Width / 2, foxTexture.Height / 2), Vector2.One,
+                SpriteEffects.None, 0f);
+            spriteBatch.End();
         }
 
         private void DrawTree(Tree tree)

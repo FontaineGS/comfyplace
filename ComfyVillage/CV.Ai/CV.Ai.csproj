@@ -13,4 +13,8 @@
     <ProjectReference Include="..\CV.Map\CV.Map.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Modules\" />
+  </ItemGroup>
+
 </Project>

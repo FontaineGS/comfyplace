@@ -9,11 +9,9 @@ using CV.Agents;
 
 namespace CV.Ai
 {
-    public abstract class IIa
+    public interface IIa
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
-        public abstract void Compute(IEnumerable<IAgent> sworld);
+        int Id { get; set; }
+        void Compute(IEnumerable<IAgent> sworld);
     }
 }

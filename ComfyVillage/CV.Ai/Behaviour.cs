@@ -2,7 +2,7 @@
 {
     public enum Behaviour
     {
-        Move = 0,
-        Nothing = 1
+        Nothing = 0,
+        Move = 1,
     };
 }
