@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CV.Map.basicStruct;
 
-namespace IAManager
+namespace CV.Agents.Intents
 {
     public class Intent
     {

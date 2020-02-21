@@ -17,11 +17,11 @@ namespace CV.World
 
         public void Resolve()
         {
-            ComputeIA();
+            ComputeAI();
             Move();
         }
 
-        private void ComputeIA()
+        private void ComputeAI()
         {
             foreach(var IIA in World.Ias)
             {
@@ -36,11 +36,6 @@ namespace CV.World
                 return;
             float tick = (float)CompleteWorld.TickTime / 1000; //en secondes
 
-
-            //Console.WriteLine(" " + tick);
-            //Console.WriteLine(speed.X + " " +speed.Y);
-
-            //Console.WriteLine(agent.Location.X + " " +agent.Location.Y);
             float _x = agent.Location.X + speed.X * tick;
             float _y = agent.Location.Y + speed.Y * tick;
             float _z = agent.Location.Z + speed.Z * tick;
@@ -49,14 +44,16 @@ namespace CV.World
             agent.Location.Y = _y;
             agent.Location.Z = _z;
 
-            //Console.WriteLine(_x + " " +_y);
+
+            //Comsumption
+            agent.Energy -= agent.SpeedConsumption((float) agent.Speed.Length * tick * 1000);;
         }
 
         private void Move()
         {
             foreach (var agent in World.Agents.Where(i => i is MovingAgent).Cast<MovingAgent>())
             {
-                Move(agent, agent.Speed);
+                Move(agent, agent.Intent.MoveIntent);
             }
         }
 

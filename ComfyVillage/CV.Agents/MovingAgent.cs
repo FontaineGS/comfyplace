@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CV.Agents.Intents;
 using CV.Map.basicStruct;
 
 namespace CV.Agents
@@ -17,6 +18,7 @@ namespace CV.Agents
         protected MovingAgent()
         {
             Id = Guid.NewGuid();
+            Intent = new Intent();
         }
 
         public WorldLocation Location
@@ -33,10 +35,14 @@ namespace CV.Agents
 
         #region ressources
 
-        public abstract int Energy { get; }
-        public abstract int Fatigue { get; }
+        public float Energy { get; set; }
+        public float Fatigue { get; set; }
         #endregion
 
+        #region Intent
+        public Intent Intent { get; }
+
+        #endregion
 
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
+using CV.Agents.Intents;
 using CV.Map.basicStruct;
 
 namespace CV.Agents
@@ -19,5 +20,8 @@ namespace CV.Agents
         {
             Id = Guid.NewGuid();
         }
+
+        public Intent Intent { get; }
+        
     }
 }

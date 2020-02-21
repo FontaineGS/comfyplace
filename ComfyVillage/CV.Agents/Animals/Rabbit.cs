@@ -8,9 +8,12 @@ namespace CV.Agents.Animals
     {
         public override float MaxVelocity { get; } = 1.0f;
         public override Func<float, float> SpeedConsumption { get; } = (float speed) => { return speed; };
-        public override int Energy => throw new NotImplementedException();
-        public override int Fatigue => throw new NotImplementedException();
         public override int Meat { get; } = 100;
+        public Rabbit()
+        {
+            Fatigue = 0;
+            Energy = 100;
+        }
     }
 }
 
