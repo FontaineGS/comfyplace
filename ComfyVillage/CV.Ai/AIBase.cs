@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using CV.Agents;
 using CV.Agents.Intents;
+using CV.Ai.Objectives;
 
 namespace CV.Ai
 {
@@ -12,6 +13,7 @@ namespace CV.Ai
     {
         protected AIBase()
         {
+            Objectives = new List<Objective>();
         }
 
         [Key]
@@ -22,6 +24,8 @@ namespace CV.Ai
         public abstract void Compute(IEnumerable<IAgent> sworld);
 
         protected TAgent _agent;
+
+        protected IEnumerable<Objective> Objectives { get; set; }
 
     }
 }

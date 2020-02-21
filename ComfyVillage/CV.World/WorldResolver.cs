@@ -11,8 +11,6 @@ namespace CV.World
 {
     public class WorldResolver
     {
-
-
         public CompleteWorld World { get; set; } = null;
 
         public void Resolve()
