@@ -6,12 +6,14 @@ using System.Text;
 
 namespace CV.Ai.Objectives
 {
-    public class Objective
+    internal abstract class ObjectiveBase : IObjective
     {
         public WorldLocation Location { get; set; }
 
         public bool IsComplete { get; set; }
 
         public virtual int Score { get; set; }
+
+        public abstract void Refresh();
     }
 }

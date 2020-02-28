@@ -8,7 +8,7 @@ namespace CV.Ai.Modules
 {
     internal static class MoveModule
     {
-        internal static SpeedVector getSpeedVector(WorldLocation origin, WorldLocation direction, float velocity)
+        internal static SpeedVector GetSpeedVector(WorldLocation origin, WorldLocation direction, float velocity)
         {
             var vector = direction - origin;
 
@@ -33,7 +33,7 @@ namespace CV.Ai.Modules
 
         internal static SpeedVector Roam(WorldLocation agentLocation, float range, float velocity)
         {
-            return getSpeedVector(agentLocation, DetectionModule.GetRandomLocation(agentLocation, range), velocity);
+            return GetSpeedVector(agentLocation, DetectionModule.GetRandomLocation(agentLocation, range), velocity);
         }
     }
 }

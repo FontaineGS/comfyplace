@@ -51,6 +51,7 @@ namespace CV.World
         {
             foreach (var agent in World.Agents.Where(i => i is MovingAgent).Cast<MovingAgent>())
             {
+
                 Move(agent, agent.Intent.MoveIntent);
             }
         }

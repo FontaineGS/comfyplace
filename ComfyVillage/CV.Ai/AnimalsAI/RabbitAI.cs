@@ -16,7 +16,7 @@ namespace CV.Ai.AnimalsAI
             Tree target = DetectionModule.NearestTree(_agents.Where(i => i.GetType() == typeof(Tree)).Select(j => j as Tree), _agent);
             if (target != null && _agent.Location.Distance(target.Location) > velocity)
             {
-                _agent.Intent.MoveIntent = MoveModule.getSpeedVector(_agent.Location, target.Location, velocity);
+                _agent.Intent.MoveIntent = MoveModule.GetSpeedVector(_agent.Location, target.Location, velocity);
             }
             else
             {

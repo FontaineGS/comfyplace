@@ -11,6 +11,6 @@ namespace CV.Agents.Intents
     {
         public SpeedVector MoveIntent { get; set; } = null;
 
-        public Behaviour CurrentBehavior { get; set; }
+        public Atittude CurrentBehavior { get; set; }
     }
 }
