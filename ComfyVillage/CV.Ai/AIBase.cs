@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Resources;
 using System.Text;
 using CV.Agents;
 using CV.Agents.Intents;
@@ -31,17 +33,22 @@ namespace CV.Ai
 
         protected virtual void Act()
         {
-            throw new NotImplementedException();
+            _agent.Intent.CurrentBehavior = CurrentObjective.Attitude;
         }
 
         protected virtual void Decide()
         {
-            throw new NotImplementedException();
+            foreach (var behavior in Behaviors)
+            {
+                behavior.Calculate();
+            }
+
+            var objectives = Behaviors.Select(b => b.Objective).Where(o => o != null).Max(ob => ob.Score);
+
         }
 
         protected virtual void Detect()
         {
-            throw new NotImplementedException();
         }
 
         protected TAgent _agent;

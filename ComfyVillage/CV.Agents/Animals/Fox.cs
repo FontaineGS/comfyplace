@@ -6,7 +6,7 @@ namespace CV.Agents.Animals
 {
     public class Fox : Animal
     {
-        public override float MaxVelocity { get; } = 50f;
+        public override float MaxVelocity { get; } = 2.0f;
         public override Func<float, float> SpeedConsumption { get; } = (float speed) => { return speed; };
         public override int Meat { get; } = 150;
 

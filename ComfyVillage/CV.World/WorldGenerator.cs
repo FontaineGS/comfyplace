@@ -39,7 +39,7 @@ namespace CV.World
                 };
                 world.Agents.Add(a);
             }
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < 1; i++)
             {
                 Rabbit a = new Rabbit();
                 a.Location = GetRandomWorldLocation(world);
@@ -51,7 +51,7 @@ namespace CV.World
                 world.Ias.Add(ia);
             }
 
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < 1; i++)
             {
                 Fox a = new Fox();
                 a.Location = GetRandomWorldLocation(world);
