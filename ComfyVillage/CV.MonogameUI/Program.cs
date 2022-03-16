@@ -1,16 +1,9 @@
 ﻿using System;
 
-namespace CV.Monogame
+namespace CV.MonogameUI
 {
-#if WINDOWS || LINUX
-    /// <summary>
-    /// The main class.
-    /// </summary>
     public static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
@@ -18,5 +11,4 @@ namespace CV.Monogame
                 game.Run();
         }
     }
-#endif
 }

@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework.Input;
 using System;
 using CV.Agents.Animals;
 
-namespace CV.Monogame
+namespace CV.MonogameUI
 {
     /// <summary>
     /// This is the main type for your game.
