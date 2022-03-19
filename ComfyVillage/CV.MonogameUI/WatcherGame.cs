@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using CV.Agents.Animals;
+using System.Linq;
 
 namespace CV.MonogameUI
 {
@@ -20,6 +21,9 @@ namespace CV.MonogameUI
         Texture2D treeTexture;
         Texture2D rabbitTexture;
         Texture2D foxTexture;
+        Texture2D[] coloredTexture;
+        Texture2D blueTexture;
+        int pixelSize = 2;
 
         double _timeSinceLastTurn = 0;
 
@@ -59,6 +63,24 @@ namespace CV.MonogameUI
             treeTexture = Content.Load<Texture2D>("tree");
             rabbitTexture = Content.Load<Texture2D>("rabbit");
             foxTexture = Content.Load<Texture2D>("fox");
+
+            coloredTexture = new Texture2D[256];
+            coloredTexture = coloredTexture.Select(i => i = new Texture2D(GraphicsDevice, pixelSize, pixelSize)).ToArray();
+
+            //get good color for color range (0 - 255 from something like 40 to 200)
+            Color getGreen(int elevation)
+            {
+                var value = (float)(255 - elevation) * (120.0 / 255.0) + 80;
+                return new Color((int)(value * 0.4), (int)value, (int)(value * 0.6));
+            };
+            for (int i = 0; i < coloredTexture.Length; i++)
+            {
+                coloredTexture[i].SetData<Color>((new Color[pixelSize * pixelSize]).Select(k => k = getGreen(i)).ToArray());
+            }
+
+            blueTexture = new Texture2D(GraphicsDevice, pixelSize, pixelSize);
+            blueTexture.SetData((new Color[pixelSize * pixelSize]).Select(k => k = Color.LightBlue).ToArray());
+
             // TODO: use this.Content to load your game content here
         }
 
@@ -83,16 +105,17 @@ namespace CV.MonogameUI
 
             // TODO: Add your update logic here
 
-            if (_timeSinceLastTurn > 10)
+            if (_timeSinceLastTurn > 100)
             {
                 _resolver.Resolve();
+                
                 _timeSinceLastTurn = 0;
             }
             else
             {
                 _timeSinceLastTurn += gameTime.ElapsedGameTime.TotalMilliseconds;
             }
-                base.Update(gameTime);
+            base.Update(gameTime);
         }
 
         /// <summary>
@@ -101,19 +124,31 @@ namespace CV.MonogameUI
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.LightGreen);
+            GraphicsDevice.Clear(Color.LightBlue);
 
             // TODO: Add your drawing code here
 
-            foreach (var agent in _world.Agents)
+            // Terrain code
+            for (int i = 0; i < _resolver.World.Terrain.SIZE; i++)
             {
-                if (agent is Rabbit)
-                    DrawRabbit(agent as Rabbit);
-                if (agent is Tree)
-                    DrawTree(agent as Tree);
-                if (agent is Fox)
-                    DrawFox(agent as Fox);
+                for (int j = 0; j < _resolver.World.Terrain.SIZE; j++)
+                {
+                    DrawElevation(i, j, (int)_resolver.World.Terrain.HeightMap[i, j]);
+                }
             }
+
+
+            // Agents code
+            /* foreach (var agent in _world.Agents)
+             {
+                 if (agent is Rabbit)
+                     DrawRabbit(agent as Rabbit);
+                 if (agent is Tree)
+                     DrawTree(agent as Tree);
+                 if (agent is Fox)
+                     DrawFox(agent as Fox);
+             }
+            */
 
             base.Draw(gameTime);
         }
@@ -139,6 +174,18 @@ SpriteEffects.None, 0f);
             spriteBatch.Begin();
             spriteBatch.Draw(rabbitTexture, new Vector2(rabbit.Location.X, rabbit.Location.Y), null, Color.White, 0f, new Vector2(rabbitTexture.Width / 2, rabbitTexture.Height / 2), Vector2.One,
 SpriteEffects.None, 0f);
+            spriteBatch.End();
+        }
+
+        private void DrawElevation(int x, int y, int elevation)
+        {
+            spriteBatch.Begin();
+            if (elevation < 20)
+                spriteBatch.Draw(blueTexture, new Vector2(x * pixelSize, y * pixelSize), Color.White);
+            else if (elevation > 255)
+                spriteBatch.Draw(blueTexture, new Vector2(x * pixelSize, y * pixelSize), Color.Red);
+            else
+                spriteBatch.Draw(coloredTexture[elevation], new Vector2(x * pixelSize, y * pixelSize), Color.White) ;
             spriteBatch.End();
         }
     }

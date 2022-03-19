@@ -15,8 +15,9 @@ namespace CV.World
 
         public void Resolve()
         {
-            ComputeAI();
-            Move();
+            World.Terrain.Erode();
+        //    ComputeAI();
+        //    Move();
         }
 
         private void ComputeAI()

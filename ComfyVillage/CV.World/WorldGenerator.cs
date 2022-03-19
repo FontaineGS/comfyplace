@@ -20,10 +20,8 @@ namespace CV.World
         {
             var world = new CompleteWorld();
             var terrain = world.Terrain;
-            terrain.Init();
             var terrainbuilder = new TerrainBuilder();
             terrainbuilder.Init(terrain);
-            terrainbuilder.DiamondAlgoritm();
             return world;
         }
 

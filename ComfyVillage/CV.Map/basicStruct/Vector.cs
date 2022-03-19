@@ -23,10 +23,17 @@ namespace CV.Map.basicStruct
             Id = Guid.NewGuid();
         }
 
-        public double Length
+        public Vector (float x, float y, float z)
+        {
+            X = x;
+            Y = y;
+            Z = z;
+        }
+
+        public float Length
         {
             get{
-            return Math.Sqrt(X*X + Y*Y + Z*Z);
+            return (float)Math.Sqrt((X*X + Y*Y + Z*Z));
             }
         }
 
@@ -43,6 +50,12 @@ namespace CV.Map.basicStruct
         public static Vector operator /(Vector w1, float w2)
         {
             return new Vector() { X = w1.X /w2, Y = w1.Y / w2, Z = w1.Z / w2 };
+        }
+
+        public Vector Normalize()
+        {
+            var l = this.Length;
+            return new Vector(X / l, Y / l, Z / l);
         }
 
     }

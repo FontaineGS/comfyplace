@@ -9,6 +9,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CV.Map
 {
+
+
+    public enum TerrainType
+    {
+        Rock,
+        Grass,
+        Sand,
+        Water
+    }
+
     public class Terrain
     {
         [Key]
@@ -27,19 +37,11 @@ namespace CV.Map
         {
             SIZE = (int)Math.Pow(2, PRECISION) + 1;
         }
-        public void Init()
+
+        public void Erode()
         {
-
-            HeightMap = new double[SIZE, SIZE];
-            for (int i = 0; i < SIZE; i++)
-            {
-                for (int j = 0; j < SIZE; j++)
-                {
-                    HeightMap[i, j] = 0;
-                }
-            }
+            TerrainManipulator.RunErosionTick(HeightMap, SIZE);
         }
-
 
     }
 }
