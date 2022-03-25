@@ -17,13 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaunchingVillage", "Launchi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseService", "DatabaseService\DatabaseService.csproj", "{45C6C7DD-74A8-4964-B7FE-7DC5B39750BF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComfyWebApi", "ComfyWebApi\ComfyWebApi.csproj", "{57B9F27F-855F-47D5-B5D0-B3C156CEB6B9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WSVillagePlugin", "WSVillagePlugin\WSVillagePlugin.csproj", "{6A328D93-8688-4787-99E9-80564BA4BC2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CV.MonogameUI", "CV.MonogameUI\CV.MonogameUI.csproj", "{E3BF4A65-2062-4C84-97BB-DFB9A3F1B728}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CV.MonogameUI", "CV.MonogameUI\CV.MonogameUI.csproj", "{E3BF4A65-2062-4C84-97BB-DFB9A3F1B728}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastNoiseLite", "FastNoiseLite\FastNoiseLite.csproj", "{93FA3B07-5572-4902-BEBB-E92CDDFD09C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastNoiseLite", "FastNoiseLite\FastNoiseLite.csproj", "{93FA3B07-5572-4902-BEBB-E92CDDFD09C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CV.Exporter", "CV.Exporter\CV.Exporter.csproj", "{62433AEF-A908-4898-AC60-293914E2607F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,14 +89,6 @@ Global
 		{45C6C7DD-74A8-4964-B7FE-7DC5B39750BF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{45C6C7DD-74A8-4964-B7FE-7DC5B39750BF}.Release|x86.ActiveCfg = Release|Any CPU
 		{45C6C7DD-74A8-4964-B7FE-7DC5B39750BF}.Release|x86.Build.0 = Release|Any CPU
-		{57B9F27F-855F-47D5-B5D0-B3C156CEB6B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{57B9F27F-855F-47D5-B5D0-B3C156CEB6B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{57B9F27F-855F-47D5-B5D0-B3C156CEB6B9}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{57B9F27F-855F-47D5-B5D0-B3C156CEB6B9}.Debug|x86.Build.0 = Debug|Any CPU
-		{57B9F27F-855F-47D5-B5D0-B3C156CEB6B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{57B9F27F-855F-47D5-B5D0-B3C156CEB6B9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{57B9F27F-855F-47D5-B5D0-B3C156CEB6B9}.Release|x86.ActiveCfg = Release|Any CPU
-		{57B9F27F-855F-47D5-B5D0-B3C156CEB6B9}.Release|x86.Build.0 = Release|Any CPU
 		{6A328D93-8688-4787-99E9-80564BA4BC2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6A328D93-8688-4787-99E9-80564BA4BC2B}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{6A328D93-8688-4787-99E9-80564BA4BC2B}.Debug|x86.Build.0 = Debug|Any CPU
@@ -120,6 +112,14 @@ Global
 		{93FA3B07-5572-4902-BEBB-E92CDDFD09C9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{93FA3B07-5572-4902-BEBB-E92CDDFD09C9}.Release|x86.ActiveCfg = Release|Any CPU
 		{93FA3B07-5572-4902-BEBB-E92CDDFD09C9}.Release|x86.Build.0 = Release|Any CPU
+		{62433AEF-A908-4898-AC60-293914E2607F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62433AEF-A908-4898-AC60-293914E2607F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62433AEF-A908-4898-AC60-293914E2607F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{62433AEF-A908-4898-AC60-293914E2607F}.Debug|x86.Build.0 = Debug|Any CPU
+		{62433AEF-A908-4898-AC60-293914E2607F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62433AEF-A908-4898-AC60-293914E2607F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62433AEF-A908-4898-AC60-293914E2607F}.Release|x86.ActiveCfg = Release|Any CPU
+		{62433AEF-A908-4898-AC60-293914E2607F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

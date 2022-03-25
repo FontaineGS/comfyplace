@@ -23,6 +23,7 @@ namespace CV.MonogameUI
         Texture2D foxTexture;
         Texture2D[] coloredTexture;
         Texture2D blueTexture;
+        Texture2D redTexture;
         int pixelSize = 2;
 
         double _timeSinceLastTurn = 0;
@@ -81,6 +82,9 @@ namespace CV.MonogameUI
             blueTexture = new Texture2D(GraphicsDevice, pixelSize, pixelSize);
             blueTexture.SetData((new Color[pixelSize * pixelSize]).Select(k => k = Color.LightBlue).ToArray());
 
+
+            redTexture = new Texture2D(GraphicsDevice, pixelSize*3, pixelSize*3);
+            redTexture.SetData((new Color[pixelSize*3 * pixelSize*3]).Select(k => k = Color.Red).ToArray());
             // TODO: use this.Content to load your game content here
         }
 
@@ -105,7 +109,7 @@ namespace CV.MonogameUI
 
             // TODO: Add your update logic here
 
-            if (_timeSinceLastTurn > 100)
+            if (_timeSinceLastTurn > 50)
             {
                 _resolver.Resolve();
                 
@@ -136,6 +140,8 @@ namespace CV.MonogameUI
                     DrawElevation(i, j, (int)_resolver.World.Terrain.HeightMap[i, j]);
                 }
             }
+
+            DrawBall(_resolver.World.Terrain.Snowball.Item1, (_resolver.World.Terrain.Snowball.Item2));
 
 
             // Agents code
@@ -180,12 +186,22 @@ SpriteEffects.None, 0f);
         private void DrawElevation(int x, int y, int elevation)
         {
             spriteBatch.Begin();
-            if (elevation < 20)
+            if (elevation < 0)
                 spriteBatch.Draw(blueTexture, new Vector2(x * pixelSize, y * pixelSize), Color.White);
             else if (elevation > 255)
                 spriteBatch.Draw(blueTexture, new Vector2(x * pixelSize, y * pixelSize), Color.Red);
             else
                 spriteBatch.Draw(coloredTexture[elevation], new Vector2(x * pixelSize, y * pixelSize), Color.White) ;
+
+
+            spriteBatch.End();
+        }
+
+        private void DrawBall(int x, int y)
+        {
+            spriteBatch.Begin(); 
+            spriteBatch.Draw(redTexture, new Vector2(x * pixelSize, y * pixelSize), Color.White);
+
             spriteBatch.End();
         }
     }

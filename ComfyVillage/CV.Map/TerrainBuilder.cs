@@ -10,7 +10,6 @@ namespace CV.Map
     {
         private Terrain Terrain = null;
 
-
         private int espace;
 
         public void Init(Terrain _terrain)
@@ -18,15 +17,18 @@ namespace CV.Map
             Terrain = _terrain;
             espace = Terrain.SIZE - 1;
 
-            //var hmap = PerlinNoise(Terrain.SIZE);
-            var hmap = BiggyMap(Terrain.SIZE);
+             //var hmap = PerlinNoise(Terrain.SIZE);
+            // var hmap = BiggyMap(Terrain.SIZE);
+            var hmap = NormaleMap(Terrain.SIZE);
             //var hmap = DiamondAlgoritm(Terrain.PRECISION, Terrain.SIZE);
             //var hmap = new double[Terrain.SIZE, Terrain.SIZE];
-            Terrain.HeightMap = hmap;
+            Terrain.HeightMap = new HeightMap(hmap, Terrain.SIZE);
 
-            for(int i = 0; i< 11; i++)
+            for(int i = 0; i< 30; i++)
             {
+              // Terrain.Erode();
             }
+         
         }
 
 
@@ -153,7 +155,66 @@ namespace CV.Map
             return curHeightMap;
         }
 
+        private static double[,] NormaleMap(int Size)
+        {
+            double[,] curHeightMap = new double[Size, Size];
+            Random r = new Random();
+            for (int y = 0; y < Size; y++)
+            {
+                for (int x = 0; x < Size; x++)
+                {
+                    curHeightMap[x, y] = GetAdjustedNormaleDouble(x,y,128,80);
+                }
+            }
 
+            return curHeightMap;
+        }
+
+
+        private static double GetNormale(double x, double esp, double ecart)
+        {
+
+            double f1 = 1 / (ecart * Math.Sqrt(2 * Math.PI));
+            double fexp = (x - esp) / ecart;
+            double fexpcar = Math.Exp(-(fexp * fexp) / 2.0);
+
+            double result = f1 * fexpcar;
+
+            return result;
+        }
+
+        private static double GetAdjustedNormale(double x, double esp, double ecart)
+        {
+            var n = GetNormale(x, esp, ecart);
+            var max = GetNormale(esp, esp, ecart);
+
+            double ratio = n / max;
+
+            return ratio *  230;
+        }
+
+        private static double GetNormaleDouble(double x, double y, double esp, double ecart)
+        {
+            var f1 = ((x - esp) * (x - esp) / (2 * ecart * ecart) + (y - esp) * (y - esp) / (2 * ecart * ecart));
+            var result = Math.Exp(-f1);
+            return result;
+        }
+
+        private static double GetAdjustedNormaleDouble(double x, double y, double esp, double ecart)
+        {
+            var n = GetNormaleDouble(x, y, esp, ecart);
+            var max = GetNormaleDouble(esp, esp, esp, ecart);
+            return (n / max) * 230;
+        }
+
+        private static double BoxMullerTransfo(Random rand)
+        {
+            double u1 = 1.0 - rand.NextDouble(); //uniform(0,1] random doubles
+            double u2 = 1.0 - rand.NextDouble();
+            double randStdNormal = Math.Sqrt(-2.0 * Math.Log(u1)) *
+                         Math.Sin(2.0 * Math.PI * u2); //random normal(0,1)
+            return randStdNormal;
+        }
         private static double Normalize(double value)
         {
             return Math.Max(Math.Min(value, 255), 0);

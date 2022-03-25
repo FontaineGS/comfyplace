@@ -25,12 +25,16 @@ namespace CV.Map
         public Guid Id { get; set; }
         public int PRECISION = 8;
         public int SIZE {get;set;}
-        public double[,] HeightMap = null;
+        public HeightMap HeightMap = null;
 
+        private TerrainManipulator Manipulator = new TerrainManipulator();
+
+        public (int, int) Snowball => (Manipulator.manager.X, Manipulator.manager.Y)  ;
         public Terrain(int value)
         {
             PRECISION = value;
             SIZE = (int)Math.Pow(2, PRECISION) + 1;
+            HeightMap = new HeightMap(SIZE);
         }
 
         public Terrain()
@@ -40,7 +44,12 @@ namespace CV.Map
 
         public void Erode()
         {
-            TerrainManipulator.RunErosionTick(HeightMap, SIZE);
+            Manipulator.RunErosionTick(HeightMap, SIZE);
+        }
+
+        public void ErodeStep()
+        {
+            Manipulator.StepErode(SIZE, HeightMap);
         }
 
     }

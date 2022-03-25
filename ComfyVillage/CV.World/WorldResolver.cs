@@ -15,9 +15,10 @@ namespace CV.World
 
         public void Resolve()
         {
-            World.Terrain.Erode();
-        //    ComputeAI();
-        //    Move();
+            //    ComputeAI();
+            //    Move();
+            //World.Terrain.ErodeStep();
+
         }
 
         private void ComputeAI()
@@ -43,7 +44,6 @@ namespace CV.World
             agent.Location.Y = _y;
             agent.Location.Z = _z;
 
-
             //Comsumption
             agent.Energy -= agent.SpeedConsumption((float) agent.Speed.Length * tick * 1000);;
         }
@@ -52,7 +52,6 @@ namespace CV.World
         {
             foreach (var agent in World.Agents.Where(i => i is MovingAgent).Cast<MovingAgent>())
             {
-
                 Move(agent, agent.Intent.MoveIntent);
             }
         }
