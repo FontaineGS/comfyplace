@@ -23,7 +23,7 @@ namespace CV.Map
     {
         [Key]
         public Guid Id { get; set; }
-        public int PRECISION = 8;
+        public int PRECISION = 9;
         public int SIZE {get;set;}
         public HeightMap HeightMap = null;
 
@@ -42,15 +42,28 @@ namespace CV.Map
             SIZE = (int)Math.Pow(2, PRECISION) + 1;
         }
 
-        public void Erode()
+        public void Erode(int repeat)
         {
-            Manipulator.RunErosionTick(HeightMap, SIZE);
+            Manipulator.RunErosionTick(HeightMap, SIZE, repeat);
         }
 
         public void ErodeStep()
         {
             Manipulator.StepErode(SIZE, HeightMap);
         }
+
+        public void ErodeTest()
+        {
+
+            Manipulator.manager.Start(HeightMap, 59, 40, SIZE);
+            Manipulator.manager.Step();
+        }
+
+        public void River()
+        {
+            Manipulator.RunRiver(HeightMap, 50, 50, 200);
+        }
+
 
     }
 }

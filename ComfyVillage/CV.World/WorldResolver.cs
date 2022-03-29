@@ -17,7 +17,7 @@ namespace CV.World
         {
             //    ComputeAI();
             //    Move();
-            //World.Terrain.ErodeStep();
+            World.Terrain.ErodeStep();
 
         }
 

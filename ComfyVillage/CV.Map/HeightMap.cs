@@ -8,18 +8,25 @@ namespace CV.Map
     public class HeightMap
     {
         private int _size;
+        public int Size => _size;
         private double[,] _data  = null;
+
+        public double[,] WaterLevel { get; set; } = null;
 
         public HeightMap(int size)
         {
             _size = size;
             _data = new double[size, size];
+            WaterLevel = new double[size, size];
+
         }
 
         public HeightMap(double[,] data, int size)
         {
             _size = size;
             _data = data;
+            WaterLevel = new double[size, size];
+
         }
 
         public Vector Normale( float x, float y)

@@ -17,23 +17,22 @@ namespace CV.Map
             Terrain = _terrain;
             espace = Terrain.SIZE - 1;
 
-             //var hmap = PerlinNoise(Terrain.SIZE);
-            // var hmap = BiggyMap(Terrain.SIZE);
-            var hmap = NormaleMap(Terrain.SIZE);
+            //var hmap = PerlinNoise(Terrain.SIZE);
+            var hmap = PenteMap(Terrain.SIZE);
+            //var hmap = BiggyMap(Terrain.SIZE);
+            //var hmap = NormaleMap(Terrain.SIZE);
             //var hmap = DiamondAlgoritm(Terrain.PRECISION, Terrain.SIZE);
             //var hmap = new double[Terrain.SIZE, Terrain.SIZE];
             Terrain.HeightMap = new HeightMap(hmap, Terrain.SIZE);
 
-            for(int i = 0; i< 30; i++)
-            {
-              // Terrain.Erode();
-            }
-         
+            //Terrain.Erode(256*256*30);
+            Terrain.Erode(256*1000*30);
+
+
+           // Terrain.ErodeTest();
+            // Terrain.River();
+
         }
-
-
-
-
 
         private static double[,] DiamondAlgoritm(int Precision, int Size)
         {
@@ -112,27 +111,55 @@ namespace CV.Map
         //    RandomAccessPerlinNoise.NoiseGenerator truc = new RandomAccessPerlinNoise.NoiseGenerator();
         //}
 
-        private static double[,] PerlinNoise(int Size)
+        private static void LargePerlinNoise(double[,] tab, int Size)
         {
             var Generator = new FastNoiseLite();
             Generator.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
-            Generator.SetSeed(1039);
-            Generator.SetFrequency((float)0.020);
+            Generator.SetSeed(1337);
+            Generator.SetFrequency((float)0.005);
             Generator.SetFractalType(FastNoiseLite.FractalType.FBm);
-            Generator.SetFractalOctaves(12);
-            Generator.SetFractalLacunarity((float)1.20);
-            Generator.SetFractalGain((float)0.70);
+            Generator.SetFractalOctaves(10);
+            Generator.SetFractalLacunarity(1.20f);
+            Generator.SetFractalGain(0.7f);
             Generator.SetFractalWeightedStrength(0);
-            double[,] curHeightMap = new double[Size, Size];
 
             for (int y = 0; y < Size; y++)
             {
                 for (int x = 0; x < Size; x++)
                 {
-                    curHeightMap[x, y] = 128 + 128 * Generator.GetNoise(x, y);
+                    tab[x, y] += 128 + 118 * Generator.GetNoise(x, y);
                 }
             }
 
+        }
+
+        private static void LittlePerlinNoise(double[,] tab, int Size, float factor)
+        {
+            var Generator = new FastNoiseLite();
+            Generator.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
+            Generator.SetSeed(1337);
+            Generator.SetFrequency((float)0.02);
+            Generator.SetFractalType(FastNoiseLite.FractalType.FBm);
+            Generator.SetFractalOctaves(10);
+            Generator.SetFractalLacunarity(3.0f);
+            Generator.SetFractalGain(0.7f);
+            Generator.SetFractalWeightedStrength(0);
+
+            for (int y = 0; y < Size; y++)
+            {
+                for (int x = 0; x < Size; x++)
+                {
+                    tab[x, y] += factor * Generator.GetNoise(x, y);
+                }
+            }
+
+        }
+
+        private static double[,] PerlinNoise(int Size)
+        {
+            double[,] curHeightMap = new double[Size, Size];
+            LargePerlinNoise(curHeightMap, Size);
+            LittlePerlinNoise(curHeightMap, Size, 0);
             return curHeightMap;
         }
 
@@ -145,10 +172,10 @@ namespace CV.Map
                 for (int x = 0; x < Size; x++)
                 {
                     if (x < 60 && x > 30 && y < 60 && y > 30)
-                        curHeightMap[x, y] = 128;
+                        curHeightMap[x, y] = 40;
 
-                    if (x < 300 && x > 80 && y <  140 && y > 50)
-                        curHeightMap[x, y] = 160;
+                    if (x < 300 && x > 80 && y < 140 && y > 50)
+                        curHeightMap[x, y] = 80;
                 }
             }
 
@@ -163,7 +190,28 @@ namespace CV.Map
             {
                 for (int x = 0; x < Size; x++)
                 {
-                    curHeightMap[x, y] = GetAdjustedNormaleDouble(x,y,128,80);
+                    curHeightMap[x, y] = GetAdjustedNormaleDouble(x, y, 128, 80);
+                }
+            }
+
+            return curHeightMap;
+        }
+
+
+        private static double[,] PenteMap(int Size)
+        {
+            double[,] curHeightMap = new double[Size, Size];
+
+            for (int y = 0; y < Size; y++)
+            {
+                for (int x = 0; x < Size; x++)
+                {
+                    float lim = (4.0f / 5.0f) * Size;
+                    if (x > lim)
+                        curHeightMap[x, y] = 0;
+                    curHeightMap[x, y] = 255 * (1 - ((float)x / lim)) ;
+
+
                 }
             }
 
@@ -190,7 +238,7 @@ namespace CV.Map
 
             double ratio = n / max;
 
-            return ratio *  230;
+            return ratio * 230;
         }
 
         private static double GetNormaleDouble(double x, double y, double esp, double ecart)
@@ -206,6 +254,7 @@ namespace CV.Map
             var max = GetNormaleDouble(esp, esp, esp, ecart);
             return (n / max) * 230;
         }
+
 
         private static double BoxMullerTransfo(Random rand)
         {

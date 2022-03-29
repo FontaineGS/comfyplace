@@ -26,13 +26,14 @@ namespace CV.Map
         public int iteration = 0;
 
 
-        private int maxIterations = 30;
+        private int maxIterations = 90;
+        public int MaxIterations => maxIterations;
         private float depositionRate = 0.04f;
-        private float erosionRate = 0.02f;
+        private float erosionRate = 0.04f;
         private float iterationScale = 0.04f;
-        private float friction = 0.2f;
-        private float speed = 0.2f;
-        private int radius = 3;
+        private float friction = 0.9f;
+        private float speed = 0.4f;
+        private int radius = 5;
 
         public void Start(HeightMap map, float _x, float _y, int _size)
         {
@@ -53,22 +54,26 @@ namespace CV.Map
 
         public bool Step()
         {
-            if (iteration == 0) return false;
+            if (iteration == 0)
+            {
+               // Change(heightMap, xp, yp, sediment, size);
+                return false;
+            }
             iteration--;
             var surfaceNormal = heightMap.Normale(x + ox * radius, y + oy * radius);
 
             // If the terrain is flat, stop simulating, the snowball cannot roll any further
-            if (surfaceNormal.Z == 1)
-                return true;
+            /*if (surfaceNormal.Z == 1)
+                return true;*/
 
             // Calculate the deposition and erosion rate
             var deposit = sediment * depositionRate * surfaceNormal.Z;
             var erosion = erosionRate * (1 - surfaceNormal.Z) * Math.Min(1, ((maxIterations - iteration) * iterationScale));
 
             // Change the sediment on the place this snowball came from
-            Change(heightMap, xp, yp, deposit - erosion, size);
-            sediment += erosion - deposit;
-
+            Change(heightMap, xp, yp,  deposit - (float)erosion, size);
+            sediment += 1 * ((float)erosion - deposit);
+           
             vx = friction * vx + surfaceNormal.X * speed;
             vy = friction * vy + surfaceNormal.Y * speed;
             xp = x;
