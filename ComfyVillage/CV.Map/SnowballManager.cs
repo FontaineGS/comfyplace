@@ -84,7 +84,6 @@ namespace CV.Map
             oy = (float)r.NextDouble()*2 -1;
 
             return true;
-            
         }
 
 

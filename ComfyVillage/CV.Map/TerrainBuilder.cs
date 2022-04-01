@@ -17,8 +17,8 @@ namespace CV.Map
             Terrain = _terrain;
             espace = Terrain.SIZE - 1;
 
-            //var hmap = PerlinNoise(Terrain.SIZE);
-            var hmap = PenteMap(Terrain.SIZE);
+            var hmap = PerlinNoise(Terrain.SIZE);
+            //var hmap = PenteMap(Terrain.SIZE);
             //var hmap = BiggyMap(Terrain.SIZE);
             //var hmap = NormaleMap(Terrain.SIZE);
             //var hmap = DiamondAlgoritm(Terrain.PRECISION, Terrain.SIZE);
@@ -26,7 +26,8 @@ namespace CV.Map
             Terrain.HeightMap = new HeightMap(hmap, Terrain.SIZE);
 
             //Terrain.Erode(256*256*30);
-            Terrain.Erode(256*1000*30);
+           //
+           Terrain.Erode(2000000);
 
 
            // Terrain.ErodeTest();
@@ -115,19 +116,19 @@ namespace CV.Map
         {
             var Generator = new FastNoiseLite();
             Generator.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
-            Generator.SetSeed(1337);
+            Generator.SetSeed(1342);
             Generator.SetFrequency((float)0.005);
             Generator.SetFractalType(FastNoiseLite.FractalType.FBm);
             Generator.SetFractalOctaves(10);
-            Generator.SetFractalLacunarity(1.20f);
-            Generator.SetFractalGain(0.7f);
+            Generator.SetFractalLacunarity(0.60f);
+            Generator.SetFractalGain(0.5f);
             Generator.SetFractalWeightedStrength(0);
 
             for (int y = 0; y < Size; y++)
             {
                 for (int x = 0; x < Size; x++)
                 {
-                    tab[x, y] += 128 + 118 * Generator.GetNoise(x, y);
+                    tab[x, y] += 128 + 100 * Generator.GetNoise(x, y);
                 }
             }
 
@@ -159,7 +160,7 @@ namespace CV.Map
         {
             double[,] curHeightMap = new double[Size, Size];
             LargePerlinNoise(curHeightMap, Size);
-            LittlePerlinNoise(curHeightMap, Size, 0);
+            LittlePerlinNoise(curHeightMap, Size, 28);
             return curHeightMap;
         }
 

@@ -55,8 +55,8 @@ namespace CV.Map
         public void ErodeTest()
         {
 
-            Manipulator.manager.Start(HeightMap, 59, 40, SIZE);
-            Manipulator.manager.Step();
+            Manipulator.manager.Init( 59, 40);
+            Manipulator.manager.Step(HeightMap);
         }
 
         public void River()

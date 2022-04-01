@@ -1,6 +1,6 @@
-﻿using CV.Map.basicStruct;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Text;
 
 namespace CV.Map
@@ -29,23 +29,25 @@ namespace CV.Map
 
         }
 
-        public Vector Normale( float x, float y)
+        public Vector3 Normale( float x, float y)
         {
             int v1 = (int)x;
             int v2 = (int)y;
 
-            if (v1 <= 0 || v2 <= 0 || v1 >= _size - 1 || v2 >= _size - 1) return new Vector(0, 0, 1);
+            if (v1 <= 0 || v2 <= 0 || v1 >= _size - 1 || v2 >= _size - 1) return new Vector3(0, 0, 1);
             var N = _data[v1, v2 + 1];
             var S = _data[v1, v2 - 1];
             var W = _data[v1 - 1, v2];
             var E = _data[v1 + 1, v2];
 
-            return new Vector()
+            var result = new Vector3()
             {
                 X = (float)(2 * (W - E)),
-                Y = (float)(2 * (S -N)),
+                Y = (float)(2 * (S - N)),
                 Z = 4
-            }.Normalize();
+            };
+
+            return Vector3.Normalize(result);
         }
 
         public double this[int x, int y]
