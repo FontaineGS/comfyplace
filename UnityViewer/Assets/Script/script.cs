@@ -24,8 +24,8 @@ public class script : MonoBehaviour
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
 
-        movementX = movementVector.x;
-        movementY = movementVector.y;
+        movementX = movementVector.x * 3;
+        movementY = movementVector.y * 3;
     }
 
     private void FixedUpdate()

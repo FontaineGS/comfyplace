@@ -27,7 +27,7 @@ namespace CV.Map
 
             //Terrain.Erode(256*256*30);
            //
-           Terrain.Erode(2000000);
+           Terrain.Erode(10);
 
 
            // Terrain.ErodeTest();
