@@ -34,7 +34,7 @@ public class Engine : MonoBehaviour
     internal void UpdateTerrain()
     {
         
-        Job = Task.Run(() => World.Terrain.Erode(10000));
+        Job = Task.Run(() => World.Terrain.Erode(100));
 
 
        // World.Terrain.Erode(10000);

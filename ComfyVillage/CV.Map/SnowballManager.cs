@@ -56,7 +56,7 @@ namespace CV.Map
         {
             if (iteration == 0)
             {
-               // Change(heightMap, xp, yp, sediment, size);
+                // Change(heightMap, xp, yp, sediment, size);
                 return false;
             }
             iteration--;
@@ -71,17 +71,17 @@ namespace CV.Map
             var erosion = erosionRate * (1 - surfaceNormal.Z) * Math.Min(1, ((maxIterations - iteration) * iterationScale));
 
             // Change the sediment on the place this snowball came from
-            Change(heightMap, xp, yp,  deposit - (float)erosion, size);
+            Change(heightMap, xp, yp, deposit - (float)erosion, size);
             sediment += 1 * ((float)erosion - deposit);
-           
+
             vx = friction * vx + surfaceNormal.X * speed;
             vy = friction * vy + surfaceNormal.Y * speed;
             xp = x;
             yp = y;
             x += vx;
             y += vy;
-            ox = (float)r.NextDouble()*2 -1;
-            oy = (float)r.NextDouble()*2 -1;
+            ox = (float)r.NextDouble() * 2 - 1;
+            oy = (float)r.NextDouble() * 2 - 1;
 
             return true;
         }
@@ -91,7 +91,14 @@ namespace CV.Map
         {
             if (xp <= 0 || yp <= 0 || xp >= size - 1 || yp >= size - 1) return;
 
-            heightMap[(int)xp, (int)yp] += deposit;
+
+            if (deposit > 0 || heightMap.Sedimentation[(int)xp, (int)yp] > deposit)
+                heightMap.Sedimentation[(int)xp, (int)yp] += deposit;
+            else
+            {
+                heightMap.Sedimentation[(int)xp, (int)yp] = 0;
+                heightMap.Rock[(int)xp, (int)yp] += heightMap.Sedimentation[(int)xp, (int)yp] + deposit;
+            }
         }
 
 

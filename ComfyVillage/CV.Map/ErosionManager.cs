@@ -60,8 +60,18 @@ namespace CV.Map
 
         private void UpdateHeightMap(HeightMap heightMap, Vector2 ipos, float cdiff)
         {
-            if (!IsOutside(heightMap, ipos))
-                heightMap[(int)ipos.X, (int)ipos.Y] -= _dt * _particle.volume * _depositionRate * cdiff;
+            if (IsOutside(heightMap, ipos))
+                return;
+            var deposit = _dt * _particle.volume * _depositionRate * cdiff;
+            if (deposit < 0 || heightMap.Sedimentation[(int)ipos.X, (int)ipos.Y] > deposit)
+                heightMap.Sedimentation[(int)ipos.X, (int)ipos.Y] -= deposit;
+            else
+            {
+                heightMap.Sedimentation[(int)ipos.X, (int)ipos.Y] = 0;
+                heightMap.Rock[(int)ipos.X, (int)ipos.Y] -= deposit - heightMap.Sedimentation[(int)ipos.X, (int)ipos.Y];
+            }
+
+
         }
 
         public bool IsOutside(HeightMap heightMap, Vector2 ipos)

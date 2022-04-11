@@ -24,7 +24,7 @@ namespace CV.Exporter
             _resolver.World = _world;
 
             var result = CreateImage(_world.Terrain.HeightMap);
-            using (var stream = File.Open(@"C:\REPOS\truc.png", FileMode.Create))
+            using (var stream = File.Open(@"C:\REPOSITORY\truc.png", FileMode.Create))
             {
 
                 result.Save(stream, ImageFormat.Png);

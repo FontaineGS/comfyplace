@@ -25,9 +25,8 @@ namespace CV.Map
             //var hmap = new double[Terrain.SIZE, Terrain.SIZE];
             Terrain.HeightMap = new HeightMap(hmap, Terrain.SIZE);
 
-            //Terrain.Erode(256*256*30);
-           //
-           Terrain.Erode(10);
+           // Terrain.Erode(256*256*30);
+           
 
 
            // Terrain.ErodeTest();
@@ -106,11 +105,6 @@ namespace CV.Map
 
             return curHeightMap;
         }
-
-        //private static double[,] DiamondAlgoritm(int Precision, int Size)
-        //{
-        //    RandomAccessPerlinNoise.NoiseGenerator truc = new RandomAccessPerlinNoise.NoiseGenerator();
-        //}
 
         private static void LargePerlinNoise(double[,] tab, int Size)
         {
